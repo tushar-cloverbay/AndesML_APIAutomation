@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+	<listeners>
+		<listener class-name="net.andesml.utils.ListenersTestNG"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+		<!-- 
+		<class name="net.andesml.CampaignManagement.CreateCampaign" />
+		<class name="net.andesml.CampaignManagement.ListCampaigns" />
+		<class name="net.andesml.CampaignManagement.GetProducts" />
+		<class name="net.andesml.CampaignManagement.GetCampaign" />
+		<class name="net.andesml.CampaignManagement.GetCatalogueProducts" />
+		<class name="net.andesml.CampaignManagement.AddProductsToCampaign" />
+		<class name="net.andesml.CampaignManagement.RemoveProductsFromCampaign" />
+		<class name="net.andesml.CampaignManagement.UpdateCampaign" />
+		<class name="net.andesml.CampaignManagement.UpdateProducts" />
+		<class name="net.andesml.CampaignManagement.SetStatus" />
+		-->
+		
+		<class name="net.andesml.CampaignManagement.CreateCampaign" />
+
+		
+		</classes>
+	</test> 
+</suite>

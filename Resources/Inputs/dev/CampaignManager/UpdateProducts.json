@@ -1,0 +1,20 @@
+{
+    "products" : [
+            {
+                "product_id": "337",
+                "product_name": "Tricota Hombre Super Light Air Red/Black Polygon Rojo XL",
+                "product_title": "Tricota Hombre Super Light Air Red/Black Polygon",
+                "product_brand": "POLYGON",
+                "product_image_url": "https://montenbaikcl.vteximg.com.br/arquivos/ids/166354/ezgif-3-c7e1a002b11c.jpg?v=637656716370970000",
+                "product_cpc": 2
+            },
+            {
+                "product_id": "339",
+                "product_name": "Tricota Hombre Super Light Air Red/Black Polygon Rojo XL",
+                "product_title": "Tricota Hombre Super Light Air Red/Black Polygon",
+                "product_brand": "POLYGON",
+                "product_image_url": "https://montenbaikcl.vteximg.com.br/arquivos/ids/166354/ezgif-3-c7e1a002b11c.jpg?v=637656716370970000",
+                "product_cpc": 2
+            }
+    ]
+}

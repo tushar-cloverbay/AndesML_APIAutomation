@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="net.assuresign.utils.ListenersTestNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="net.assuresign.sprint_6_74.TestPlan_46794">
+        <methods>
+          <include name="reportUp"/>
+          <include name="testCase_48202_S674" invocation-numbers="0"/>
+          <include name="showVariables"/>
+          <include name="testCase_47955_S674" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.sprint_6_74.TestPlan_46794 -->
+      <class name="net.assuresign.sprint_6_74.TestPlan_46966">
+        <methods>
+          <include name="testCase_48163_S674" invocation-numbers="0"/>
+          <include name="reportUp"/>
+          <include name="showVariables"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.sprint_6_74.TestPlan_46966 -->
+      <class name="net.assuresign.sprint_6_74.TestPlan_46968">
+        <methods>
+          <include name="reportUp"/>
+          <include name="testCase_48165_S674" invocation-numbers="0"/>
+          <include name="showVariables"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.sprint_6_74.TestPlan_46968 -->
+      <class name="net.assuresign.sprint_6_74.TestPlan_46967">
+        <methods>
+          <include name="testCase_48164_S674" invocation-numbers="0"/>
+          <include name="reportUp"/>
+          <include name="showVariables"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.sprint_6_74.TestPlan_46967 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

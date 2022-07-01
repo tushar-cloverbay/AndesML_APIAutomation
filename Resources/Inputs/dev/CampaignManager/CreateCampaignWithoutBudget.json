@@ -1,0 +1,26 @@
+{
+  "campaign_name": "Log_Test_01",
+  "tenant_name": "MontenBaik",
+  "advertiser_name": "CrossMountain",
+  "seller_id": "629885bdc2311500bd868549",
+  "seller_name": "CrossMountain",
+
+  "start_date": "2022-07-23",
+  "end_date": "2022-07-27",
+  "cpc": 100,
+  "currency":"INR",
+  "billing_type": "CPM",
+  "campaign_goal": "Increase Visibility",
+  "daily_budget": 90,
+  "products":
+        [
+            {
+                "product_id": "337",
+                "product_name": "Bicicleta SISKIU T7 2021 29 Polygon 29 XL",
+                "product_title": "Bicicleta SISKIU T7 2021 29 Polygon",
+                "product_brand": "POLYGON",
+                "product_image_url": "https://montenbaikcl.vteximg.com.br/arquivos/ids/166019/Foto53.jpg?v=637656706126000000",
+                "product_cpc": 300
+            }
+        ]
+}

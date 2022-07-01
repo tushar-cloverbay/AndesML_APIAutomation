@@ -1,0 +1,42 @@
+package net.andesml.CampaignManagement;
+
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
+
+import static org.hamcrest.Matchers.*;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import net.andesml.base.Base;
+import net.andesml.base.Constants;
+import net.andesml.utils.TestUtils;
+
+public class SetStatus extends Base {
+
+	@Test(dataProvider = "version-data-provider",enabled = false)
+	public void SetStatus_VerifyStatusCode_stop(String version) throws Exception {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code for stop operation after calling SetStatus api.");
+		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId;
+			
+		RequestSpecification request = RestAssured.given()
+				.queryParam("op", "stop")
+				.header("Authorization", "Bearer "+TestUtils.getAccessToken(Constants.user, Constants.password));
+			request.header("Content-Type", "application/json")
+				.header("tenant_id", Constants.tenant_id)
+				.header("advertiser_id", Constants.advertiser_id)
+				.header("client_id", Constants.client_id)
+				.header("trace_id", Constants.trace_id)
+				.header("seller_id", Constants.seller_id);
+			Response response = request.patch(URI);
+			extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 204");
+			statusCode = ""+response.getStatusCode();
+			responseBody =response.getBody().asString();
+			System.out.println(response.getBody().asString());
+			System.out.println(response.getStatusCode());
+			response.then().assertThat()
+			.statusCode(equalTo(204));
+	}
+	
+}
