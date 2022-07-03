@@ -214,7 +214,7 @@ public class AddProductsToCampaign extends Base {
 		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
 		System.out.println(URI);
 		String payload = JsonUtils
-				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\AddProductToCampaign.json");
+				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\AddProductToCampaign2.json");
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(payload.toString());
