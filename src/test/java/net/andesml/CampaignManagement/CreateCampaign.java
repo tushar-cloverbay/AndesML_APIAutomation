@@ -87,7 +87,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("campaignName"))
@@ -100,8 +99,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithoutTanentName.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -118,7 +117,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("tenantName"))
@@ -131,8 +129,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithoutAdvertiserName.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -149,7 +147,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("advertiserName"))
@@ -162,8 +159,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithoutSeller_id.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -180,7 +177,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("sellerId"))
@@ -193,8 +189,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithoutSeller_name.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -211,7 +207,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("sellerName"))
@@ -224,8 +219,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithoutBudget.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -242,7 +237,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("budget"))
@@ -255,8 +249,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithoutProduct.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -273,7 +267,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(207))
 		.body("status", is("CREATED"));
 
@@ -285,8 +278,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWrongBudget.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -303,7 +296,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].message", is("Budget has to be in between 20000.0 to 80000.0"));	
@@ -315,8 +307,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWrongCPC.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -333,7 +325,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].message", is("CPC has to be in between  0.3 to 2000.0"));	
@@ -345,8 +336,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithout_product_id.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -363,7 +354,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("products[0].productId"))
@@ -377,8 +367,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithout_product_name.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -395,7 +385,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("products[0].productName"))
@@ -409,8 +398,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithout_product_title.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -427,7 +416,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("products[0].productTitle"))
@@ -441,8 +429,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithout_product_brand.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -459,7 +447,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("products[0].productBrand"))
@@ -473,8 +460,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithout_product_image_url.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -491,7 +478,6 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
 		.body("errors[0].property", is("products[0].productImageUrl"))
@@ -505,8 +491,8 @@ public class CreateCampaign extends Base {
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\CreateCampaignWithout_product_cpc.json");
 		
-		campaignName = "Test " + TestUtils.getTime();
-		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName);
+		String campaignName1 = "Test " + TestUtils.getTime();
+		String resultBody = TestUtils.updateJsonKey(payload, "campaign_name", campaignName1);
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(resultBody);
@@ -523,11 +509,10 @@ public class CreateCampaign extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		campaignId = JsonUtils.getKeyValue(response, "campaign_id");
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
-		.body("errors[0].property", is("campaignDto"))
-		.body("errors[0].message", is("campaignDto value is empty or invalid or missing"));	
+		.body("errors[0].property", is("products[0].productCpc"))
+		.body("errors[0].message", is("Cpc is missing"));	
 
 	}
 	

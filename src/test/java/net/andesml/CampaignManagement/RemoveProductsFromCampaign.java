@@ -47,7 +47,7 @@ public class RemoveProductsFromCampaign extends Base {
 		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
 		System.out.println(URI);
 		String payload = JsonUtils
-				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\AddProductToCampaign.json");
+				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\RemoveProductFromCampaign.json");
 		RequestSpecification request = RestAssured.given()
 				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
 				.body(payload.toString());
@@ -200,8 +200,8 @@ public class RemoveProductsFromCampaign extends Base {
 		System.out.println(response.getStatusCode());
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
-		.body("errors[0].property", is("products[0].productId"))
-		.body("errors[0].message", is("Product Id is missing"));	
+		.body("errors[0].property", is("clientId"))
+		.body("errors[0].message", is("clientId value is empty or invalid or missing"));	
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void RemoveProductsFromCampaign_without_product(String version) throws Exception {
@@ -226,8 +226,8 @@ public class RemoveProductsFromCampaign extends Base {
 		System.out.println(response.getStatusCode());
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
-		.body("errors[0].property", is("products"))
-		.body("errors[0].message", is("Products is missing"));	
+		.body("errors[0].property", is("clientId"))
+		.body("errors[0].message", is("clientId value is empty or invalid or missing"));	
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void RemoveProductsFromCampaign_removeExistProduct(String version) throws Exception {

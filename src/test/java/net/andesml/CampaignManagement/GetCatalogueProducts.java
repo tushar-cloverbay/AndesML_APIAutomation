@@ -64,32 +64,7 @@ public class GetCatalogueProducts extends Base {
 	.body("errors[0].property", is("tenantId"))
 	.body("errors[0].message", is("tenantId value is empty or invalid or missing"));	
 	}
-	@Test(dataProvider = "version-data-provider",enabled = true)
-	public void GetCatalogueProducts_advertiser_id(String version) throws Exception {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling GetCatalogueProducts api without advertiser_id header.");
-		apiVersion = version;
-		String URI = Constants.campaign_manager_domain+"/catalogue/v1/products";
-
-		RequestSpecification request = RestAssured.given()
-			.queryParam("brand", "TRP%7C%5ETAG%20METALS")
-			.header("Authorization", "Bearer "+TestUtils.getAccessToken(Constants.user, Constants.password));
-		request.header("Content-Type", "application/json")
-		.header("client_id", Constants.client_id)
-		.header("trace_id", Constants.trace_id)
-		.header("tenant_id", Constants.tenant_id)
-		
-		.header("seller_id", Constants.seller_id);
-		Response response = request.get(URI);
-		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 400");
-		statusCode = ""+response.getStatusCode();
-		responseBody =response.asPrettyString();
-		System.out.println(response.asPrettyString());
-		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(400))
-		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
-		.body("errors[0].property", is("advertiserId"))
-		.body("errors[0].message", is("advertiserId value is empty or invalid or missing"));	
-	}
+	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void GetCatalogueProducts_seller_id(String version) throws Exception {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling GetCatalogueProducts api without seller_id header.");

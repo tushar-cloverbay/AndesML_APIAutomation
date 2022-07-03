@@ -140,7 +140,26 @@ public class TestUtils extends Base {
 		System.out.println(resultJson.toString());
 		return resultJson.toString();
 	}
-	
+	public static void addProduct() throws Exception {
+		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
+		System.out.println(URI);
+		String payload = JsonUtils
+				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\AddProductToCampaign.json");
+		RequestSpecification request = RestAssured.given()
+				.header("Authorization", "Bearer " + TestUtils.getAccessToken(Constants.user, Constants.password))
+				.body(payload.toString());
+		request.header("Content-Type", "application/json")
+			.header("client_id", Constants.client_id)
+			.header("trace_id", Constants.trace_id)
+			.header("tenant_id", Constants.tenant_id)
+			.header("advertiser_id", Constants.advertiser_id)
+			.header("seller_id", Constants.seller_id);
+		Response response = request.post(URI);
+		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 207");
+		statusCode = ""+response.getStatusCode();
+		responseBody =response.getBody().asString();
+		System.out.println(response.getBody().asString());
+	}
 	public static String getAccessToken(String userName, String password) throws Exception {
 		Response response = RestAssured.given().auth().preemptive().basic(Constants.client_id, Constants.client_secret)
 				.formParam("grant_type", "password")

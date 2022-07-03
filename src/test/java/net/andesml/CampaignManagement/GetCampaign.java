@@ -173,9 +173,10 @@ public class GetCampaign extends Base {
 		RequestSpecification request = RestAssured.given()
 			.header("Authorization", "Bearer "+TestUtils.getAccessToken(Constants.user, Constants.password));
 		request.header("Content-Type", "application/json")
-		.header("trace_id", Constants.trace_id)
 		.header("tenant_id", Constants.tenant_id)
 		.header("advertiser_id", Constants.advertiser_id)
+		.header("client_id", Constants.client_id)
+		.header("trace_id", Constants.trace_id)
 		.header("seller_id", Constants.seller_id);
 		Response response = request.get(URI);
 		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 404");
@@ -184,7 +185,7 @@ public class GetCampaign extends Base {
 		System.out.println(response.asPrettyString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat().statusCode(equalTo(404))
-		.body("errors[0].code", is("CAMPAIGN_VALIDATION_ERROR"))
+		.body("errors[0].code", is("CAMPAIGN_NOT_FOUND"))
 		.body("errors[0].message", is("campaign not found with name invalidName"));
 	}
 	
