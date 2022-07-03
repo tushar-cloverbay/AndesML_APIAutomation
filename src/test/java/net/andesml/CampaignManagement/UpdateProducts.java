@@ -73,7 +73,7 @@ public class UpdateProducts extends Base {
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void UpdateProducts_without_tenant_id(String version) throws Exception {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling getProducts api without tenant_id header.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling UpdateProducts api without tenant_id header.");
 		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\UpdateProducts.json");
@@ -101,7 +101,7 @@ public class UpdateProducts extends Base {
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void UpdateProducts_without_advertiser_id(String version) throws Exception {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling getProducts api without advertiser_id header.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling UpdateProducts api without advertiser_id header.");
 		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\UpdateProducts.json");
@@ -129,7 +129,7 @@ public class UpdateProducts extends Base {
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void UpdateProducts_without_seller_id(String version) throws Exception {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling getProducts api without seller_id header.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling UpdateProducts api without seller_id header.");
 		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\UpdateProducts.json");
@@ -156,7 +156,7 @@ public class UpdateProducts extends Base {
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void UpdateProducts_without_client_id(String version) throws Exception {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling getProducts api without client_id header.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling UpdateProducts api without client_id header.");
 		String URI = Constants.campaign_manager_domain+"/campaigns/v1/"+campaignId+"/products";
 		String payload = JsonUtils
 				.payloadGenerator("Inputs\\" + Constants.ENV + "\\CampaignManager\\UpdateProducts.json");

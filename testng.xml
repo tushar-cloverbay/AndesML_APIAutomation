@@ -6,7 +6,7 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-		<!-- 
+		<!-- -->
 		<class name="net.andesml.CampaignManagement.CreateCampaign" />
 		<class name="net.andesml.CampaignManagement.ListCampaigns" />
 		<class name="net.andesml.CampaignManagement.GetProducts" />
@@ -17,9 +17,8 @@
 		<class name="net.andesml.CampaignManagement.UpdateCampaign" />
 		<class name="net.andesml.CampaignManagement.UpdateProducts" />
 		<class name="net.andesml.CampaignManagement.SetStatus" />
-		-->
 		
-		<class name="net.andesml.CampaignManagement.CreateCampaign" />
+
 
 		
 		</classes>
