@@ -576,7 +576,7 @@ public class CreateCampaign extends Base {
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void CreateCampaign_VerifyResponseParameters(String version) throws Exception
 	{
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status message after calling create campaign api.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify Response parameters after calling create campaign api.");
 		apiVersion = version;
 		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 207");
 		statusCode = ""+responseBase.getStatusCode();

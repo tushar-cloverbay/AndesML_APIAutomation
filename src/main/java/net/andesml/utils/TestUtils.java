@@ -171,4 +171,13 @@ public class TestUtils extends Base {
 		String token = JsonUtils.getKeyValue(response, "access_token");
 		return token;
 	}
+	public static String getAccessTokenClientCreds(String client_id, String client_secret) throws Exception {
+		Response response = RestAssured.given().auth().preemptive().basic(client_id, client_secret)
+				.formParam("grant_type", "client_credentials")
+				.when().post(Constants.access_token_url_client_cred);
+		System.out.println("*******************************************************************************");
+		System.out.println(response.asPrettyString());
+		String token = JsonUtils.getKeyValue(response, "access_token");
+		return token;
+	}
 }

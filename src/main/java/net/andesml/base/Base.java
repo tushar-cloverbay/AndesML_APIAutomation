@@ -35,6 +35,7 @@ public class Base {
 	public static Response responseBase;
 	public static String campaignName;
 	public static String campaignId;
+	public static String adId;
 	
 	public Base() {
 		Constants.loadEnv();
