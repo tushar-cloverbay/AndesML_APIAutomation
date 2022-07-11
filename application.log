@@ -16620,3 +16620,962 @@
 2022-07-10 10:23:05,110 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
 2022-07-10 10:23:05,110 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
 2022-07-10 10:23:05,110 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:00:17,629  INFO [main] AndesML:46 - log object created
+2022-07-11 08:00:19,877 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.auth.andesml.com:443
+2022-07-11 08:00:20,084 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.auth.andesml.com:443
+2022-07-11 08:00:20,907 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:00:20,911 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:00:20,913 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:00:20,917 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:00:20,918 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:00:20,920 DEBUG [main] wire:73 -  >> "POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1[\r][\n]"
+2022-07-11 08:00:20,924 DEBUG [main] wire:73 -  >> "Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz[\r][\n]"
+2022-07-11 08:00:20,925 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:00:20,928 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2022-07-11 08:00:20,928 DEBUG [main] wire:73 -  >> "Content-Length: 29[\r][\n]"
+2022-07-11 08:00:20,930 DEBUG [main] wire:73 -  >> "Host: dev.auth.andesml.com[\r][\n]"
+2022-07-11 08:00:20,931 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:00:20,933 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:00:20,936 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:00:20,937 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:00:20,937 DEBUG [main] headers:278 - >> POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:00:20,938 DEBUG [main] headers:281 - >> Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz
+2022-07-11 08:00:20,939 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:00:20,940 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2022-07-11 08:00:20,940 DEBUG [main] headers:281 - >> Content-Length: 29
+2022-07-11 08:00:20,941 DEBUG [main] headers:281 - >> Host: dev.auth.andesml.com
+2022-07-11 08:00:20,942 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:00:20,942 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:00:20,943 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:00:20,945 DEBUG [main] wire:87 -  >> "grant_type=client_credentials"
+2022-07-11 08:00:23,094 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-07-11 08:00:23,100 DEBUG [main] wire:73 -  << "cache-control: no-store[\r][\n]"
+2022-07-11 08:00:23,101 DEBUG [main] wire:73 -  << "set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly[\r][\n]"
+2022-07-11 08:00:23,103 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:00:23,104 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:00:23,105 DEBUG [main] wire:73 -  << "x-frame-options: SAMEORIGIN https://www.google.com[\r][\n]"
+2022-07-11 08:00:23,106 DEBUG [main] wire:73 -  << "referrer-policy: no-referrer[\r][\n]"
+2022-07-11 08:00:23,108 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:30:22 GMT[\r][\n]"
+2022-07-11 08:00:23,109 DEBUG [main] wire:73 -  << "strict-transport-security: max-age=31536000; includeSubDomains[\r][\n]"
+2022-07-11 08:00:23,110 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:00:23,111 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:00:23,113 DEBUG [main] wire:73 -  << "content-length: 1224[\r][\n]"
+2022-07-11 08:00:23,113 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 21[\r][\n]"
+2022-07-11 08:00:23,114 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:00:23,115 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:00:23,117 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:00:23,118 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:00:23,123 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-07-11 08:00:23,125 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-07-11 08:00:23,128 DEBUG [main] headers:265 - << cache-control: no-store
+2022-07-11 08:00:23,129 DEBUG [main] headers:265 - << set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly
+2022-07-11 08:00:23,131 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:00:23,131 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:00:23,132 DEBUG [main] headers:265 - << x-frame-options: SAMEORIGIN https://www.google.com
+2022-07-11 08:00:23,134 DEBUG [main] headers:265 - << referrer-policy: no-referrer
+2022-07-11 08:00:23,135 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:30:22 GMT
+2022-07-11 08:00:23,136 DEBUG [main] headers:265 - << strict-transport-security: max-age=31536000; includeSubDomains
+2022-07-11 08:00:23,138 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:00:23,139 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:00:23,140 DEBUG [main] headers:265 - << content-length: 1224
+2022-07-11 08:00:23,141 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 21
+2022-07-11 08:00:23,142 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:00:23,143 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:00:23,145 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:00:23,156 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:00:23,214 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:00:23,216 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:00:23,383 DEBUG [main] wire:87 -  << "{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI2MjIsImlhdCI6MTY1NzUwNjYyMiwianRpIjoiMTMxN2Y0MWEtMTliNi00YzM1LWE3ZWYtYzgxNmU1NTBmMDgwIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtY"
+2022-07-11 08:00:23,388 DEBUG [main] wire:87 -  << "TU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.A8gpL2aj-1wKHqzqw7edczWPZU-JYVo6nxhPc-0fwQPIYQDAyiLXAXkTJXXU_x-kQZ25bR1irQWa7HYSou8Vtgj3iqUty5dDx1BX5r3xEhhBNOZal1mWf6V-uK2KrDFCwAO6PEQR4nwrZTED-glcuDxQACM_UomxJw3sieNzHZ7i8FfLe0NiJ1DIFd54m4DTnQpHpa4mFhVEziOp2g-z_TC_lJjHFAbS9Stcl4RIxlm9UhDhEax4j6G4idQIcUngeP5Lk6qMEchP2DsNkSWg8iiSGUomojGyfokTZpEXHVGi4qsFbetiZ01gHSM_gyCvPIDiBDILlsyhBeNSWyUZzQ","expires_in":7776000,"refresh_expires_in":0,"token_type":"Bearer","not-before-policy":1646992007,"scope":""}"
+2022-07-11 08:00:23,390 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7b6c6e70
+2022-07-11 08:00:23,391 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:00:24,259 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:00:24,605 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:00:25,008 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:00:25,010 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:00:25,012 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:00:25,014 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:00:25,015 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:00:25,017 DEBUG [main] wire:73 -  >> "POST /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1[\r][\n]"
+2022-07-11 08:00:25,018 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2022-07-11 08:00:25,020 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI2MjIsImlhdCI6MTY1NzUwNjYyMiwianRpIjoiMTMxN2Y0MWEtMTliNi00YzM1LWE3ZWYtYzgxNmU1NTBmMDgwIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.A8gpL2aj-1wKHqzqw7edczWPZU-JYVo6nxhPc-0fwQPIYQDAyiLXAXkTJXXU_x-kQZ25bR1irQWa7HYSou8Vtgj3iqUty5dDx1BX5r3xEhhBNOZal1mWf6V-uK2KrDFCwAO6PEQR4nwrZTED-glcuDxQACM_UomxJw3sieNzHZ7i8FfLe0NiJ1DIFd54m4DTnQpHpa4mFhVEziOp2g-z_TC_lJjHFAbS9Stcl4RIxlm9UhDhEax4j6G4idQIcUngeP5Lk6qMEchP2DsNkSWg8iiSGUomojGyfokTZpEXHVGi4qsFbetiZ01gHSM_gyCvPIDiBDILlsyhBeNSWyUZzQ[\r][\n]"
+2022-07-11 08:00:25,021 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:00:25,022 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2022-07-11 08:00:25,023 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:00:25,024 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:00:25,025 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:00:25,027 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:00:25,029 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:00:25,031 DEBUG [main] headers:278 - >> POST /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:00:25,031 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2022-07-11 08:00:25,032 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI2MjIsImlhdCI6MTY1NzUwNjYyMiwianRpIjoiMTMxN2Y0MWEtMTliNi00YzM1LWE3ZWYtYzgxNmU1NTBmMDgwIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.A8gpL2aj-1wKHqzqw7edczWPZU-JYVo6nxhPc-0fwQPIYQDAyiLXAXkTJXXU_x-kQZ25bR1irQWa7HYSou8Vtgj3iqUty5dDx1BX5r3xEhhBNOZal1mWf6V-uK2KrDFCwAO6PEQR4nwrZTED-glcuDxQACM_UomxJw3sieNzHZ7i8FfLe0NiJ1DIFd54m4DTnQpHpa4mFhVEziOp2g-z_TC_lJjHFAbS9Stcl4RIxlm9UhDhEax4j6G4idQIcUngeP5Lk6qMEchP2DsNkSWg8iiSGUomojGyfokTZpEXHVGi4qsFbetiZ01gHSM_gyCvPIDiBDILlsyhBeNSWyUZzQ
+2022-07-11 08:00:25,033 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:00:25,034 DEBUG [main] headers:281 - >> Content-Length: 0
+2022-07-11 08:00:25,035 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:00:25,036 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:00:25,037 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:00:25,038 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:00:26,971 DEBUG [main] wire:73 -  << "HTTP/1.1 405 Method Not Allowed[\r][\n]"
+2022-07-11 08:00:26,973 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:00:26,975 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:00:26,977 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:00:26,980 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:00:26,983 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:00:26,985 DEBUG [main] wire:73 -  << "allow: GET[\r][\n]"
+2022-07-11 08:00:26,988 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:00:26,989 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:00:26,991 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:00:26,993 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:00:26,995 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:00:26,997 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:00:27,000 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:00:27,002 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:30:26 GMT[\r][\n]"
+2022-07-11 08:00:27,005 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 30[\r][\n]"
+2022-07-11 08:00:27,007 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:00:27,010 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:00:27,012 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:00:27,015 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:00:27,018 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:00:27,021 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 405 Method Not Allowed
+2022-07-11 08:00:27,023 DEBUG [main] headers:262 - << HTTP/1.1 405 Method Not Allowed
+2022-07-11 08:00:27,024 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:00:27,026 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:00:27,028 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:00:27,029 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:00:27,030 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:00:27,032 DEBUG [main] headers:265 - << allow: GET
+2022-07-11 08:00:27,033 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:00:27,035 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:00:27,037 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:00:27,038 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:00:27,040 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:00:27,042 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:00:27,044 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:00:27,045 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:30:26 GMT
+2022-07-11 08:00:27,046 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 30
+2022-07-11 08:00:27,047 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:00:27,048 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:00:27,050 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:00:27,052 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:00:27,061 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:00:27,063 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:00:27,065 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:00:27,072 DEBUG [main] wire:73 -  << "76[\r][\n]"
+2022-07-11 08:00:27,074 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T02:30:26.873+00:00","status":405,"error":"Method Not Allowed","path":"/andes-ml/v1/ad/click"}"
+2022-07-11 08:00:27,075 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:00:27,076 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:00:27,079 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:00:27,080 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@fd413fb
+2022-07-11 08:00:27,082 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:00:27,262 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:00:27,264 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:00:27,266 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:00:27,267 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:00:27,267 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:00:27,503 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:00:27,504 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:00:27,504 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:00:27,505 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:00:27,505 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:02:32,880  INFO [main] AndesML:46 - log object created
+2022-07-11 08:02:37,239 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.auth.andesml.com:443
+2022-07-11 08:02:37,259 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.auth.andesml.com:443
+2022-07-11 08:02:38,567 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:02:38,572 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:02:38,574 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:02:38,577 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:02:38,579 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:02:38,581 DEBUG [main] wire:73 -  >> "POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1[\r][\n]"
+2022-07-11 08:02:38,586 DEBUG [main] wire:73 -  >> "Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz[\r][\n]"
+2022-07-11 08:02:38,588 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:02:38,589 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2022-07-11 08:02:38,589 DEBUG [main] wire:73 -  >> "Content-Length: 29[\r][\n]"
+2022-07-11 08:02:38,590 DEBUG [main] wire:73 -  >> "Host: dev.auth.andesml.com[\r][\n]"
+2022-07-11 08:02:38,591 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:02:38,592 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:02:38,596 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:02:38,597 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:02:38,598 DEBUG [main] headers:278 - >> POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:02:38,599 DEBUG [main] headers:281 - >> Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz
+2022-07-11 08:02:38,600 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:02:38,601 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2022-07-11 08:02:38,602 DEBUG [main] headers:281 - >> Content-Length: 29
+2022-07-11 08:02:38,603 DEBUG [main] headers:281 - >> Host: dev.auth.andesml.com
+2022-07-11 08:02:38,604 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:02:38,606 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:02:38,607 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:02:38,609 DEBUG [main] wire:87 -  >> "grant_type=client_credentials"
+2022-07-11 08:02:40,715 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-07-11 08:02:40,726 DEBUG [main] wire:73 -  << "cache-control: no-store[\r][\n]"
+2022-07-11 08:02:40,729 DEBUG [main] wire:73 -  << "set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly[\r][\n]"
+2022-07-11 08:02:40,732 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:02:40,736 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:02:40,737 DEBUG [main] wire:73 -  << "x-frame-options: SAMEORIGIN https://www.google.com[\r][\n]"
+2022-07-11 08:02:40,739 DEBUG [main] wire:73 -  << "referrer-policy: no-referrer[\r][\n]"
+2022-07-11 08:02:40,740 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:32:40 GMT[\r][\n]"
+2022-07-11 08:02:40,741 DEBUG [main] wire:73 -  << "strict-transport-security: max-age=31536000; includeSubDomains[\r][\n]"
+2022-07-11 08:02:40,742 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:02:40,743 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:02:40,744 DEBUG [main] wire:73 -  << "content-length: 1224[\r][\n]"
+2022-07-11 08:02:40,746 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 21[\r][\n]"
+2022-07-11 08:02:40,748 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:02:40,749 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:02:40,750 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:02:40,751 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:02:40,754 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-07-11 08:02:40,755 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-07-11 08:02:40,756 DEBUG [main] headers:265 - << cache-control: no-store
+2022-07-11 08:02:40,757 DEBUG [main] headers:265 - << set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly
+2022-07-11 08:02:40,758 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:02:40,759 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:02:40,760 DEBUG [main] headers:265 - << x-frame-options: SAMEORIGIN https://www.google.com
+2022-07-11 08:02:40,762 DEBUG [main] headers:265 - << referrer-policy: no-referrer
+2022-07-11 08:02:40,764 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:32:40 GMT
+2022-07-11 08:02:40,765 DEBUG [main] headers:265 - << strict-transport-security: max-age=31536000; includeSubDomains
+2022-07-11 08:02:40,766 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:02:40,768 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:02:40,769 DEBUG [main] headers:265 - << content-length: 1224
+2022-07-11 08:02:40,770 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 21
+2022-07-11 08:02:40,771 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:02:40,772 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:02:40,773 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:02:40,788 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:02:40,835 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:02:40,836 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:02:40,948 DEBUG [main] wire:87 -  << "{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI3NjAsImlhdCI6MTY1NzUwNjc2MCwianRpIjoiZmY5N2JjNjUtNWM2NC00YWRhLTgzMTUtYjI4ZGM2YjlmNWRmIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtY"
+2022-07-11 08:02:40,951 DEBUG [main] wire:87 -  << "TU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.Fv5qtT8pqEip-rmDstVtIY5tlcKBxsgSc9NdQJlRQykL1BG6ABq3wCGjWR55WB_mH5CBQGB_lxWL62EXEBBhrnTd1AAcL657hrWjlqMwI0dZV_cbKJwI-KOqfWekDbhlDSOXfQ5dstyr4q4sBw4a_tncvQPwOmS9LRlHbFov2IzP8rq-bDq6DhRRo__X6vOWF6FaI05Qnpo0yoVBX99QqOLKngKIR8ULLdzxr9m4C1yeYoNb44vjrVk_ZjK6zWe2LLn-qpVMCKtl0J-P0Ev9TkhZjJl8bpJDGZRzIZ66xPmo31BQ59wQ-Z1qVy4EzWkY6NwrYwtvDOVsS6SJdp8Kkg","expires_in":7776000,"refresh_expires_in":0,"token_type":"Bearer","not-before-policy":1646992007,"scope":""}"
+2022-07-11 08:02:40,952 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7b6c6e70
+2022-07-11 08:02:40,953 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:02:42,030 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:02:42,032 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:02:42,550 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:02:42,552 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:02:42,553 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:02:42,554 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:02:42,554 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:02:42,556 DEBUG [main] wire:73 -  >> "POST /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1[\r][\n]"
+2022-07-11 08:02:42,557 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2022-07-11 08:02:42,558 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI3NjAsImlhdCI6MTY1NzUwNjc2MCwianRpIjoiZmY5N2JjNjUtNWM2NC00YWRhLTgzMTUtYjI4ZGM2YjlmNWRmIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.Fv5qtT8pqEip-rmDstVtIY5tlcKBxsgSc9NdQJlRQykL1BG6ABq3wCGjWR55WB_mH5CBQGB_lxWL62EXEBBhrnTd1AAcL657hrWjlqMwI0dZV_cbKJwI-KOqfWekDbhlDSOXfQ5dstyr4q4sBw4a_tncvQPwOmS9LRlHbFov2IzP8rq-bDq6DhRRo__X6vOWF6FaI05Qnpo0yoVBX99QqOLKngKIR8ULLdzxr9m4C1yeYoNb44vjrVk_ZjK6zWe2LLn-qpVMCKtl0J-P0Ev9TkhZjJl8bpJDGZRzIZ66xPmo31BQ59wQ-Z1qVy4EzWkY6NwrYwtvDOVsS6SJdp8Kkg[\r][\n]"
+2022-07-11 08:02:42,559 DEBUG [main] wire:73 -  >> "trace_id: tx_123[\r][\n]"
+2022-07-11 08:02:42,560 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:02:42,562 DEBUG [main] wire:73 -  >> "client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf[\r][\n]"
+2022-07-11 08:02:42,562 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2022-07-11 08:02:42,563 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:02:42,564 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:02:42,565 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:02:42,566 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:02:42,567 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:02:42,568 DEBUG [main] headers:278 - >> POST /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:02:42,569 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2022-07-11 08:02:42,569 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI3NjAsImlhdCI6MTY1NzUwNjc2MCwianRpIjoiZmY5N2JjNjUtNWM2NC00YWRhLTgzMTUtYjI4ZGM2YjlmNWRmIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.Fv5qtT8pqEip-rmDstVtIY5tlcKBxsgSc9NdQJlRQykL1BG6ABq3wCGjWR55WB_mH5CBQGB_lxWL62EXEBBhrnTd1AAcL657hrWjlqMwI0dZV_cbKJwI-KOqfWekDbhlDSOXfQ5dstyr4q4sBw4a_tncvQPwOmS9LRlHbFov2IzP8rq-bDq6DhRRo__X6vOWF6FaI05Qnpo0yoVBX99QqOLKngKIR8ULLdzxr9m4C1yeYoNb44vjrVk_ZjK6zWe2LLn-qpVMCKtl0J-P0Ev9TkhZjJl8bpJDGZRzIZ66xPmo31BQ59wQ-Z1qVy4EzWkY6NwrYwtvDOVsS6SJdp8Kkg
+2022-07-11 08:02:42,570 DEBUG [main] headers:281 - >> trace_id: tx_123
+2022-07-11 08:02:42,571 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:02:42,572 DEBUG [main] headers:281 - >> client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf
+2022-07-11 08:02:42,572 DEBUG [main] headers:281 - >> Content-Length: 0
+2022-07-11 08:02:42,573 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:02:42,574 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:02:42,575 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:02:42,576 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:02:44,537 DEBUG [main] wire:73 -  << "HTTP/1.1 405 Method Not Allowed[\r][\n]"
+2022-07-11 08:02:44,540 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:02:44,542 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:02:44,545 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:02:44,549 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:02:44,551 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:02:44,554 DEBUG [main] wire:73 -  << "allow: GET[\r][\n]"
+2022-07-11 08:02:44,556 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:02:44,558 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:02:44,560 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:02:44,564 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:02:44,567 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:02:44,569 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:02:44,571 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:02:44,575 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:32:44 GMT[\r][\n]"
+2022-07-11 08:02:44,580 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 8[\r][\n]"
+2022-07-11 08:02:44,583 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:02:44,586 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:02:44,588 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:02:44,591 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:02:44,595 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:02:44,598 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 405 Method Not Allowed
+2022-07-11 08:02:44,600 DEBUG [main] headers:262 - << HTTP/1.1 405 Method Not Allowed
+2022-07-11 08:02:44,602 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:02:44,604 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:02:44,606 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:02:44,608 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:02:44,610 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:02:44,612 DEBUG [main] headers:265 - << allow: GET
+2022-07-11 08:02:44,615 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:02:44,617 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:02:44,619 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:02:44,620 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:02:44,622 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:02:44,625 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:02:44,627 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:02:44,630 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:32:44 GMT
+2022-07-11 08:02:44,631 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 8
+2022-07-11 08:02:44,633 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:02:44,635 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:02:44,637 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:02:44,638 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:02:44,648 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:02:44,652 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:02:44,654 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:02:44,664 DEBUG [main] wire:73 -  << "76[\r][\n]"
+2022-07-11 08:02:44,666 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T02:32:44.441+00:00","status":405,"error":"Method Not Allowed","path":"/andes-ml/v1/ad/click"}"
+2022-07-11 08:02:44,668 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:02:44,670 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:02:44,672 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:02:44,674 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4451f60c
+2022-07-11 08:02:44,675 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:02:45,104 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:02:45,107 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:02:45,113 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:02:45,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:02:45,118 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:02:45,852 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:02:45,855 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:02:45,862 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:02:45,868 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:02:45,872 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:03:19,378  INFO [main] AndesML:46 - log object created
+2022-07-11 08:03:20,927 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.auth.andesml.com:443
+2022-07-11 08:03:20,938 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.auth.andesml.com:443
+2022-07-11 08:03:21,542 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:03:21,545 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:03:21,547 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:03:21,548 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:03:21,549 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:03:21,550 DEBUG [main] wire:73 -  >> "POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1[\r][\n]"
+2022-07-11 08:03:21,554 DEBUG [main] wire:73 -  >> "Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz[\r][\n]"
+2022-07-11 08:03:21,555 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:03:21,556 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2022-07-11 08:03:21,556 DEBUG [main] wire:73 -  >> "Content-Length: 29[\r][\n]"
+2022-07-11 08:03:21,557 DEBUG [main] wire:73 -  >> "Host: dev.auth.andesml.com[\r][\n]"
+2022-07-11 08:03:21,558 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:03:21,559 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:03:21,561 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:03:21,562 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:03:21,563 DEBUG [main] headers:278 - >> POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:03:21,563 DEBUG [main] headers:281 - >> Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz
+2022-07-11 08:03:21,564 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:03:21,564 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2022-07-11 08:03:21,565 DEBUG [main] headers:281 - >> Content-Length: 29
+2022-07-11 08:03:21,565 DEBUG [main] headers:281 - >> Host: dev.auth.andesml.com
+2022-07-11 08:03:21,566 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:03:21,566 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:03:21,567 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:03:21,568 DEBUG [main] wire:87 -  >> "grant_type=client_credentials"
+2022-07-11 08:03:23,503 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-07-11 08:03:23,504 DEBUG [main] wire:73 -  << "cache-control: no-store[\r][\n]"
+2022-07-11 08:03:23,504 DEBUG [main] wire:73 -  << "set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly[\r][\n]"
+2022-07-11 08:03:23,504 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:03:23,505 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:03:23,505 DEBUG [main] wire:73 -  << "x-frame-options: SAMEORIGIN https://www.google.com[\r][\n]"
+2022-07-11 08:03:23,505 DEBUG [main] wire:73 -  << "referrer-policy: no-referrer[\r][\n]"
+2022-07-11 08:03:23,505 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:33:23 GMT[\r][\n]"
+2022-07-11 08:03:23,506 DEBUG [main] wire:73 -  << "strict-transport-security: max-age=31536000; includeSubDomains[\r][\n]"
+2022-07-11 08:03:23,506 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:03:23,506 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:03:23,507 DEBUG [main] wire:73 -  << "content-length: 1224[\r][\n]"
+2022-07-11 08:03:23,507 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 12[\r][\n]"
+2022-07-11 08:03:23,507 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:03:23,507 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:03:23,508 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:03:23,508 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:03:23,509 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-07-11 08:03:23,509 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-07-11 08:03:23,510 DEBUG [main] headers:265 - << cache-control: no-store
+2022-07-11 08:03:23,510 DEBUG [main] headers:265 - << set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly
+2022-07-11 08:03:23,510 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:03:23,510 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:03:23,510 DEBUG [main] headers:265 - << x-frame-options: SAMEORIGIN https://www.google.com
+2022-07-11 08:03:23,511 DEBUG [main] headers:265 - << referrer-policy: no-referrer
+2022-07-11 08:03:23,511 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:33:23 GMT
+2022-07-11 08:03:23,511 DEBUG [main] headers:265 - << strict-transport-security: max-age=31536000; includeSubDomains
+2022-07-11 08:03:23,511 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:03:23,512 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:03:23,512 DEBUG [main] headers:265 - << content-length: 1224
+2022-07-11 08:03:23,512 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 12
+2022-07-11 08:03:23,512 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:03:23,513 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:03:23,513 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:03:23,516 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:03:23,534 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:03:23,535 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:03:23,587 DEBUG [main] wire:87 -  << "{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI4MDMsImlhdCI6MTY1NzUwNjgwMywianRpIjoiMjE2NTMyYTAtMDllYy00MGIzLThjYjctNzhlNjE2YzY4MDYxIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtY"
+2022-07-11 08:03:23,589 DEBUG [main] wire:87 -  << "TU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.jRJMrhUOPFnTTB3yrreV-DG-QqDhjsvLGEW-Gmv_zi8ZYnZRrhd0uL1cYi_Ler__vWFvb5G96IfUZaFNZaUNoZCzcS-vBh7XhkxETDNFY7O_2PW5b4lOqRcRFHp6bhNtGgx6uaNOQ6VIH6WJ85FyqtzAetVzLXiJP9LzbTVJBPWSyCpPpzqu0F1AZGaeLT71w5m2eHDRM8J1xaSES1EouWxwodUL7rWUK2byqX3hoSis5_ARUsaE5JCDwLWe2jpxfV6jZs7e5N-Iju92gwc5EAYObL-AfCfvFJnQxzyTBUOAO3uHNIcxZ-iKAVx183YO0XqjWX1IGIjAKDxlR9Kk6g","expires_in":7776000,"refresh_expires_in":0,"token_type":"Bearer","not-before-policy":1646992007,"scope":""}"
+2022-07-11 08:03:23,589 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7b6c6e70
+2022-07-11 08:03:23,590 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:03:24,130 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:03:24,135 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:03:24,559 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:03:24,561 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:03:24,563 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:03:24,564 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:03:24,565 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:03:24,566 DEBUG [main] wire:73 -  >> "GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1[\r][\n]"
+2022-07-11 08:03:24,567 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2022-07-11 08:03:24,568 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI4MDMsImlhdCI6MTY1NzUwNjgwMywianRpIjoiMjE2NTMyYTAtMDllYy00MGIzLThjYjctNzhlNjE2YzY4MDYxIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.jRJMrhUOPFnTTB3yrreV-DG-QqDhjsvLGEW-Gmv_zi8ZYnZRrhd0uL1cYi_Ler__vWFvb5G96IfUZaFNZaUNoZCzcS-vBh7XhkxETDNFY7O_2PW5b4lOqRcRFHp6bhNtGgx6uaNOQ6VIH6WJ85FyqtzAetVzLXiJP9LzbTVJBPWSyCpPpzqu0F1AZGaeLT71w5m2eHDRM8J1xaSES1EouWxwodUL7rWUK2byqX3hoSis5_ARUsaE5JCDwLWe2jpxfV6jZs7e5N-Iju92gwc5EAYObL-AfCfvFJnQxzyTBUOAO3uHNIcxZ-iKAVx183YO0XqjWX1IGIjAKDxlR9Kk6g[\r][\n]"
+2022-07-11 08:03:24,570 DEBUG [main] wire:73 -  >> "trace_id: tx_123[\r][\n]"
+2022-07-11 08:03:24,571 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:03:24,573 DEBUG [main] wire:73 -  >> "client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf[\r][\n]"
+2022-07-11 08:03:24,574 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:03:24,575 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:03:24,576 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:03:24,576 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:03:24,578 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:03:24,579 DEBUG [main] headers:278 - >> GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:03:24,580 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2022-07-11 08:03:24,581 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODI4MDMsImlhdCI6MTY1NzUwNjgwMywianRpIjoiMjE2NTMyYTAtMDllYy00MGIzLThjYjctNzhlNjE2YzY4MDYxIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.jRJMrhUOPFnTTB3yrreV-DG-QqDhjsvLGEW-Gmv_zi8ZYnZRrhd0uL1cYi_Ler__vWFvb5G96IfUZaFNZaUNoZCzcS-vBh7XhkxETDNFY7O_2PW5b4lOqRcRFHp6bhNtGgx6uaNOQ6VIH6WJ85FyqtzAetVzLXiJP9LzbTVJBPWSyCpPpzqu0F1AZGaeLT71w5m2eHDRM8J1xaSES1EouWxwodUL7rWUK2byqX3hoSis5_ARUsaE5JCDwLWe2jpxfV6jZs7e5N-Iju92gwc5EAYObL-AfCfvFJnQxzyTBUOAO3uHNIcxZ-iKAVx183YO0XqjWX1IGIjAKDxlR9Kk6g
+2022-07-11 08:03:24,582 DEBUG [main] headers:281 - >> trace_id: tx_123
+2022-07-11 08:03:24,583 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:03:24,584 DEBUG [main] headers:281 - >> client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf
+2022-07-11 08:03:24,585 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:03:24,585 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:03:24,586 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:03:24,588 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:03:25,100 DEBUG [main] wire:73 -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+2022-07-11 08:03:25,103 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:03:25,107 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:03:25,110 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:03:25,113 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:03:25,115 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:03:25,118 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:03:25,121 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:03:25,124 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:03:25,127 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:03:25,129 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:03:25,131 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:03:25,133 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:03:25,135 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:33:25 GMT[\r][\n]"
+2022-07-11 08:03:25,139 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 21[\r][\n]"
+2022-07-11 08:03:25,142 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:03:25,146 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:03:25,150 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:03:25,154 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:03:25,157 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:03:25,161 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 500 Internal Server Error
+2022-07-11 08:03:25,163 DEBUG [main] headers:262 - << HTTP/1.1 500 Internal Server Error
+2022-07-11 08:03:25,166 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:03:25,169 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:03:25,173 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:03:25,175 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:03:25,177 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:03:25,180 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:03:25,182 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:03:25,186 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:03:25,189 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:03:25,191 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:03:25,193 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:03:25,195 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:03:25,197 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:33:25 GMT
+2022-07-11 08:03:25,201 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 21
+2022-07-11 08:03:25,203 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:03:25,205 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:03:25,208 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:03:25,210 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:03:25,219 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:03:25,223 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:03:25,225 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:03:25,236 DEBUG [main] wire:73 -  << "79[\r][\n]"
+2022-07-11 08:03:25,239 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T02:33:25.080+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click"}"
+2022-07-11 08:03:25,241 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:03:25,242 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:03:25,244 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:03:25,246 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@27fe059d
+2022-07-11 08:03:25,247 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:03:25,495 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:03:25,498 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:03:25,501 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:03:25,503 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:03:25,504 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:03:25,808 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:03:25,809 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:03:25,811 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:03:25,813 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:03:25,816 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:18:54,189  INFO [main] AndesML:46 - log object created
+2022-07-11 08:18:56,495 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.auth.andesml.com:443
+2022-07-11 08:18:56,832 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.auth.andesml.com:443
+2022-07-11 08:18:57,580 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:18:57,584 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:18:57,585 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:18:57,588 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:18:57,589 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:18:57,590 DEBUG [main] wire:73 -  >> "POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1[\r][\n]"
+2022-07-11 08:18:57,593 DEBUG [main] wire:73 -  >> "Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz[\r][\n]"
+2022-07-11 08:18:57,594 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:18:57,595 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2022-07-11 08:18:57,595 DEBUG [main] wire:73 -  >> "Content-Length: 29[\r][\n]"
+2022-07-11 08:18:57,596 DEBUG [main] wire:73 -  >> "Host: dev.auth.andesml.com[\r][\n]"
+2022-07-11 08:18:57,597 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:18:57,598 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:18:57,601 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:18:57,603 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:18:57,604 DEBUG [main] headers:278 - >> POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:18:57,605 DEBUG [main] headers:281 - >> Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz
+2022-07-11 08:18:57,607 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:18:57,608 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2022-07-11 08:18:57,609 DEBUG [main] headers:281 - >> Content-Length: 29
+2022-07-11 08:18:57,610 DEBUG [main] headers:281 - >> Host: dev.auth.andesml.com
+2022-07-11 08:18:57,612 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:18:57,613 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:18:57,614 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:18:57,615 DEBUG [main] wire:87 -  >> "grant_type=client_credentials"
+2022-07-11 08:18:59,403 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-07-11 08:18:59,408 DEBUG [main] wire:73 -  << "cache-control: no-store[\r][\n]"
+2022-07-11 08:18:59,411 DEBUG [main] wire:73 -  << "set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly[\r][\n]"
+2022-07-11 08:18:59,413 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:18:59,413 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:18:59,414 DEBUG [main] wire:73 -  << "x-frame-options: SAMEORIGIN https://www.google.com[\r][\n]"
+2022-07-11 08:18:59,415 DEBUG [main] wire:73 -  << "referrer-policy: no-referrer[\r][\n]"
+2022-07-11 08:18:59,417 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:48:59 GMT[\r][\n]"
+2022-07-11 08:18:59,419 DEBUG [main] wire:73 -  << "strict-transport-security: max-age=31536000; includeSubDomains[\r][\n]"
+2022-07-11 08:18:59,421 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:18:59,423 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:18:59,425 DEBUG [main] wire:73 -  << "content-length: 1224[\r][\n]"
+2022-07-11 08:18:59,427 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 16[\r][\n]"
+2022-07-11 08:18:59,428 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:18:59,429 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:18:59,431 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:18:59,433 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:18:59,436 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-07-11 08:18:59,437 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-07-11 08:18:59,439 DEBUG [main] headers:265 - << cache-control: no-store
+2022-07-11 08:18:59,440 DEBUG [main] headers:265 - << set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly
+2022-07-11 08:18:59,441 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:18:59,443 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:18:59,444 DEBUG [main] headers:265 - << x-frame-options: SAMEORIGIN https://www.google.com
+2022-07-11 08:18:59,446 DEBUG [main] headers:265 - << referrer-policy: no-referrer
+2022-07-11 08:18:59,448 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:48:59 GMT
+2022-07-11 08:18:59,450 DEBUG [main] headers:265 - << strict-transport-security: max-age=31536000; includeSubDomains
+2022-07-11 08:18:59,451 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:18:59,452 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:18:59,454 DEBUG [main] headers:265 - << content-length: 1224
+2022-07-11 08:18:59,455 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 16
+2022-07-11 08:18:59,456 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:18:59,459 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:18:59,461 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:18:59,477 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:18:59,550 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:18:59,552 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:18:59,701 DEBUG [main] wire:87 -  << "{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODM3MzksImlhdCI6MTY1NzUwNzczOSwianRpIjoiMTk0MjIzNjUtODg1OS00MDM2LWJjZjUtOTk1YTE3NmUyMTQ3IiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtY"
+2022-07-11 08:18:59,705 DEBUG [main] wire:87 -  << "TU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.qYJcagsqpH5lZL_S230r0IqL65FP1FOiPR0GR1yMoRi82moZfVszZ5F9BifASWZBMeGPhkFcBDEJWPPrZucjLJSp09DLBIN-PPL8Ji8ReHa4AQ80EKM_QJkz3CYSE5s0PcRTS6FEVVW8Yp9JElgXeVMs0jLF8Ui0anEXKrppIYVMUV-77-4gf41UxuLqmMtr2dVtUhmMUq9mZu01dQO1vmKSS3yFoAZ4R3ABpEkPiNF_tOLu15xE5JYuqU_oo8E4mz9T8MaP5o6xtS1yH0JQqut2GVGiG8qFNzMp0x5wkEHqt_ReQFua5FqszE8Gk6WwInZl7EzIDpuGBWg_WMWr3w","expires_in":7776000,"refresh_expires_in":0,"token_type":"Bearer","not-before-policy":1646992007,"scope":""}"
+2022-07-11 08:18:59,706 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@795f5d51
+2022-07-11 08:18:59,707 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:19:01,223 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:19:01,537 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:19:01,916 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:19:01,918 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:19:01,920 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:19:01,921 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:19:01,922 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm=&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName= HTTP/1.1
+2022-07-11 08:19:01,925 DEBUG [main] wire:73 -  >> "GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm=&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName= HTTP/1.1[\r][\n]"
+2022-07-11 08:19:01,927 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2022-07-11 08:19:01,928 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODM3MzksImlhdCI6MTY1NzUwNzczOSwianRpIjoiMTk0MjIzNjUtODg1OS00MDM2LWJjZjUtOTk1YTE3NmUyMTQ3IiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.qYJcagsqpH5lZL_S230r0IqL65FP1FOiPR0GR1yMoRi82moZfVszZ5F9BifASWZBMeGPhkFcBDEJWPPrZucjLJSp09DLBIN-PPL8Ji8ReHa4AQ80EKM_QJkz3CYSE5s0PcRTS6FEVVW8Yp9JElgXeVMs0jLF8Ui0anEXKrppIYVMUV-77-4gf41UxuLqmMtr2dVtUhmMUq9mZu01dQO1vmKSS3yFoAZ4R3ABpEkPiNF_tOLu15xE5JYuqU_oo8E4mz9T8MaP5o6xtS1yH0JQqut2GVGiG8qFNzMp0x5wkEHqt_ReQFua5FqszE8Gk6WwInZl7EzIDpuGBWg_WMWr3w[\r][\n]"
+2022-07-11 08:19:01,929 DEBUG [main] wire:73 -  >> "trace_id: tx_123[\r][\n]"
+2022-07-11 08:19:01,930 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:19:01,930 DEBUG [main] wire:73 -  >> "client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf[\r][\n]"
+2022-07-11 08:19:01,931 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:19:01,932 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:19:01,933 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:19:01,933 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:19:01,935 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:19:01,936 DEBUG [main] headers:278 - >> GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm=&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName= HTTP/1.1
+2022-07-11 08:19:01,937 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2022-07-11 08:19:01,937 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODM3MzksImlhdCI6MTY1NzUwNzczOSwianRpIjoiMTk0MjIzNjUtODg1OS00MDM2LWJjZjUtOTk1YTE3NmUyMTQ3IiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.qYJcagsqpH5lZL_S230r0IqL65FP1FOiPR0GR1yMoRi82moZfVszZ5F9BifASWZBMeGPhkFcBDEJWPPrZucjLJSp09DLBIN-PPL8Ji8ReHa4AQ80EKM_QJkz3CYSE5s0PcRTS6FEVVW8Yp9JElgXeVMs0jLF8Ui0anEXKrppIYVMUV-77-4gf41UxuLqmMtr2dVtUhmMUq9mZu01dQO1vmKSS3yFoAZ4R3ABpEkPiNF_tOLu15xE5JYuqU_oo8E4mz9T8MaP5o6xtS1yH0JQqut2GVGiG8qFNzMp0x5wkEHqt_ReQFua5FqszE8Gk6WwInZl7EzIDpuGBWg_WMWr3w
+2022-07-11 08:19:01,938 DEBUG [main] headers:281 - >> trace_id: tx_123
+2022-07-11 08:19:01,939 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:19:01,939 DEBUG [main] headers:281 - >> client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf
+2022-07-11 08:19:01,941 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:19:01,942 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:19:01,942 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:19:01,943 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:19:03,789 DEBUG [main] wire:73 -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+2022-07-11 08:19:03,791 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:19:03,792 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:19:03,793 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:19:03,794 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:19:03,795 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:19:03,796 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:19:03,797 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:19:03,798 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:19:03,799 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:19:03,800 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:19:03,801 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:19:03,803 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:19:03,805 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:49:03 GMT[\r][\n]"
+2022-07-11 08:19:03,807 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 90[\r][\n]"
+2022-07-11 08:19:03,808 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:19:03,809 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:19:03,811 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:19:03,812 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:19:03,813 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:19:03,814 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 500 Internal Server Error
+2022-07-11 08:19:03,815 DEBUG [main] headers:262 - << HTTP/1.1 500 Internal Server Error
+2022-07-11 08:19:03,816 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:19:03,817 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:19:03,817 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:19:03,818 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:19:03,819 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:19:03,821 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:19:03,822 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:19:03,823 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:19:03,824 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:19:03,826 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:19:03,828 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:19:03,829 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:19:03,830 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:49:03 GMT
+2022-07-11 08:19:03,831 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 90
+2022-07-11 08:19:03,831 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:19:03,832 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:19:03,833 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:19:03,834 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:19:03,839 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:19:03,841 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:19:03,843 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:19:03,848 DEBUG [main] wire:73 -  << "79[\r][\n]"
+2022-07-11 08:19:03,849 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T02:49:03.882+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click"}"
+2022-07-11 08:19:03,850 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:19:03,852 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:19:03,853 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:19:03,854 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@52c9d3d0
+2022-07-11 08:19:03,855 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:19:04,115 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:19:04,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:19:04,119 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:19:04,120 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:19:04,121 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:19:04,509 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:19:04,510 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:19:04,511 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:19:04,512 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:19:04,512 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:20:18,608  INFO [main] AndesML:46 - log object created
+2022-07-11 08:20:20,772 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:20:20,786 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:20:21,935 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:20:21,937 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:20:21,938 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2022-07-11 08:20:21,940 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:20:21,942 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:20:21,943 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:20:21,944 DEBUG [main] wire:73 -  >> "GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1[\r][\n]"
+2022-07-11 08:20:21,946 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2022-07-11 08:20:21,948 DEBUG [main] wire:73 -  >> "trace_id: tx_123[\r][\n]"
+2022-07-11 08:20:21,949 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:20:21,950 DEBUG [main] wire:73 -  >> "client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf[\r][\n]"
+2022-07-11 08:20:21,950 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:20:21,951 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:20:21,954 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:20:21,955 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:20:21,956 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:20:21,957 DEBUG [main] headers:278 - >> GET /andes-ml/v1/ad/click?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName HTTP/1.1
+2022-07-11 08:20:21,958 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2022-07-11 08:20:21,958 DEBUG [main] headers:281 - >> trace_id: tx_123
+2022-07-11 08:20:21,959 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:20:21,960 DEBUG [main] headers:281 - >> client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf
+2022-07-11 08:20:21,961 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:20:21,961 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:20:21,962 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:20:21,963 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:20:22,542 DEBUG [main] wire:73 -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+2022-07-11 08:20:22,545 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:20:22,546 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:20:22,547 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:20:22,548 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:20:22,548 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:20:22,549 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:20:22,550 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:20:22,550 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:20:22,551 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:20:22,552 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:20:22,552 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:20:22,553 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:20:22,554 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 02:50:22 GMT[\r][\n]"
+2022-07-11 08:20:22,555 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 11[\r][\n]"
+2022-07-11 08:20:22,557 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:20:22,558 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:20:22,559 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:20:22,559 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:20:22,560 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:20:22,562 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 500 Internal Server Error
+2022-07-11 08:20:22,562 DEBUG [main] headers:262 - << HTTP/1.1 500 Internal Server Error
+2022-07-11 08:20:22,563 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:20:22,564 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:20:22,564 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:20:22,565 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:20:22,565 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:20:22,566 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:20:22,567 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:20:22,567 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:20:22,568 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:20:22,568 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:20:22,570 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:20:22,571 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:20:22,571 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 02:50:22 GMT
+2022-07-11 08:20:22,573 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 11
+2022-07-11 08:20:22,574 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:20:22,574 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:20:22,575 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:20:22,576 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:20:22,580 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:20:22,635 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:20:22,637 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:20:22,694 DEBUG [main] wire:73 -  << "79[\r][\n]"
+2022-07-11 08:20:22,695 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T02:50:22.604+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click"}"
+2022-07-11 08:20:22,697 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:20:22,697 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:20:22,698 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:20:22,698 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@427ae189
+2022-07-11 08:20:22,699 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:20:22,909 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:20:22,911 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:20:22,919 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:20:22,922 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:20:22,923 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:20:23,352 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:20:23,352 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:20:23,352 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:20:23,353 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:20:23,353 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:35:23,181  INFO [main] AndesML:46 - log object created
+2022-07-11 08:35:26,394 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:35:26,648 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:35:27,358 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:35:27,363 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:35:27,365 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2022-07-11 08:35:27,366 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:35:27,367 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:35:27,368 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /andes-ml/v1/ad/click?encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D HTTP/1.1
+2022-07-11 08:35:27,370 DEBUG [main] wire:73 -  >> "GET /andes-ml/v1/ad/click?encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D HTTP/1.1[\r][\n]"
+2022-07-11 08:35:27,372 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:35:27,374 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:35:27,375 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:35:27,375 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:35:27,377 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:35:27,377 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:35:27,381 DEBUG [main] headers:278 - >> GET /andes-ml/v1/ad/click?encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D HTTP/1.1
+2022-07-11 08:35:27,382 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:35:27,383 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:35:27,383 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:35:27,384 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:35:27,385 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:35:27,781 DEBUG [main] wire:73 -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+2022-07-11 08:35:27,785 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:35:27,786 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:35:27,787 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:35:27,789 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:35:27,790 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:35:27,791 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:35:27,792 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:35:27,793 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:35:27,794 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:35:27,795 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:35:27,798 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:35:27,799 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:35:27,800 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 03:05:27 GMT[\r][\n]"
+2022-07-11 08:35:27,801 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 8[\r][\n]"
+2022-07-11 08:35:27,802 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:35:27,803 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:35:27,804 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:35:27,805 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:35:27,806 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:35:27,808 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 500 Internal Server Error
+2022-07-11 08:35:27,810 DEBUG [main] headers:262 - << HTTP/1.1 500 Internal Server Error
+2022-07-11 08:35:27,812 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:35:27,813 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:35:27,814 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:35:27,815 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:35:27,816 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:35:27,817 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:35:27,818 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:35:27,819 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:35:27,820 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:35:27,821 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:35:27,822 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:35:27,823 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:35:27,824 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 03:05:27 GMT
+2022-07-11 08:35:27,825 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 8
+2022-07-11 08:35:27,826 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:35:27,827 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:35:27,829 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:35:27,830 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:35:27,843 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:35:27,897 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:35:27,899 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:35:28,000 DEBUG [main] wire:73 -  << "79[\r][\n]"
+2022-07-11 08:35:28,001 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T03:05:27.871+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click"}"
+2022-07-11 08:35:28,003 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:35:28,004 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:35:28,004 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:35:28,005 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4c7e978c
+2022-07-11 08:35:28,006 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:35:28,128 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:35:28,129 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:35:28,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:35:28,132 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:35:28,133 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:35:28,427 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:35:28,427 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:35:28,428 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:35:28,428 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:35:28,429 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:41:28,280  INFO [main] AndesML:46 - log object created
+2022-07-11 08:41:32,452 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.auth.andesml.com:443
+2022-07-11 08:41:32,638 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.auth.andesml.com:443
+2022-07-11 08:41:33,154 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:41:33,157 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:41:33,158 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:41:33,159 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:41:33,160 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:41:33,160 DEBUG [main] wire:73 -  >> "POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1[\r][\n]"
+2022-07-11 08:41:33,162 DEBUG [main] wire:73 -  >> "Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz[\r][\n]"
+2022-07-11 08:41:33,163 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:41:33,164 DEBUG [main] wire:73 -  >> "Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1[\r][\n]"
+2022-07-11 08:41:33,164 DEBUG [main] wire:73 -  >> "Content-Length: 29[\r][\n]"
+2022-07-11 08:41:33,164 DEBUG [main] wire:73 -  >> "Host: dev.auth.andesml.com[\r][\n]"
+2022-07-11 08:41:33,165 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:41:33,165 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:41:33,167 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:41:33,167 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:41:33,167 DEBUG [main] headers:278 - >> POST /auth/realms/andesml/protocol/openid-connect/token HTTP/1.1
+2022-07-11 08:41:33,168 DEBUG [main] headers:281 - >> Authorization: Basic OWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmOjNGWnJWWE1GYjdEOFBLeTNXR0tYRUxZWEp1YnB0b2Fz
+2022-07-11 08:41:33,168 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:41:33,169 DEBUG [main] headers:281 - >> Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1
+2022-07-11 08:41:33,169 DEBUG [main] headers:281 - >> Content-Length: 29
+2022-07-11 08:41:33,169 DEBUG [main] headers:281 - >> Host: dev.auth.andesml.com
+2022-07-11 08:41:33,169 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:41:33,170 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:41:33,170 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:41:33,171 DEBUG [main] wire:87 -  >> "grant_type=client_credentials"
+2022-07-11 08:41:33,549 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2022-07-11 08:41:33,551 DEBUG [main] wire:73 -  << "cache-control: no-store[\r][\n]"
+2022-07-11 08:41:33,551 DEBUG [main] wire:73 -  << "set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly[\r][\n]"
+2022-07-11 08:41:33,551 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:41:33,552 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:41:33,552 DEBUG [main] wire:73 -  << "x-frame-options: SAMEORIGIN https://www.google.com[\r][\n]"
+2022-07-11 08:41:33,552 DEBUG [main] wire:73 -  << "referrer-policy: no-referrer[\r][\n]"
+2022-07-11 08:41:33,552 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 03:11:33 GMT[\r][\n]"
+2022-07-11 08:41:33,553 DEBUG [main] wire:73 -  << "strict-transport-security: max-age=31536000; includeSubDomains[\r][\n]"
+2022-07-11 08:41:33,553 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:41:33,554 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:41:33,554 DEBUG [main] wire:73 -  << "content-length: 1224[\r][\n]"
+2022-07-11 08:41:33,554 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 14[\r][\n]"
+2022-07-11 08:41:33,555 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:41:33,555 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:41:33,556 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:41:33,557 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:41:33,558 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2022-07-11 08:41:33,558 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2022-07-11 08:41:33,559 DEBUG [main] headers:265 - << cache-control: no-store
+2022-07-11 08:41:33,559 DEBUG [main] headers:265 - << set-cookie: KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/andesml/; HttpOnly
+2022-07-11 08:41:33,560 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:41:33,560 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:41:33,560 DEBUG [main] headers:265 - << x-frame-options: SAMEORIGIN https://www.google.com
+2022-07-11 08:41:33,561 DEBUG [main] headers:265 - << referrer-policy: no-referrer
+2022-07-11 08:41:33,561 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 03:11:33 GMT
+2022-07-11 08:41:33,562 DEBUG [main] headers:265 - << strict-transport-security: max-age=31536000; includeSubDomains
+2022-07-11 08:41:33,562 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:41:33,562 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:41:33,563 DEBUG [main] headers:265 - << content-length: 1224
+2022-07-11 08:41:33,563 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 14
+2022-07-11 08:41:33,564 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:41:33,564 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:41:33,565 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:41:33,569 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:41:33,591 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:41:33,591 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:41:33,651 DEBUG [main] wire:87 -  << "{"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODUwOTMsImlhdCI6MTY1NzUwOTA5MywianRpIjoiNDRjOTdhYjgtZDZhOS00ZjJjLTk4MzgtNjJmODZmYWFlZmEwIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtY"
+2022-07-11 08:41:33,653 DEBUG [main] wire:87 -  << "TU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.vdU6S0YH-fWvRYIH1XLPzZgqwK79sMEMQoNPleqRqSqibgXc1lNq9xMSwTmr5ffefoM32GL0PrW0_LkI6pPIAOvrPpH77iv07PEY88TylmMRZ4l0lBkR8W9zqqovGHw6wsHQfmXXTcfFvF8ikK6iDW8aFrhjndcxdEDD4JCuL33v9TFORC-JiydyI50EkAYLc64JnCjMedjQ7G8tUic_YsUf4fZwLugcLPEPp6sbRVAGYCUUBhErBPH-4VJ0kzRhjPN6y-KLq1NGd1_-S8m87i6CuvEAMi8wRTz87WuSY3MjjiJPJ7QC5nnHMqFjOBoj0dM_B-7ogOn6pMgEI3kNBw","expires_in":7776000,"refresh_expires_in":0,"token_type":"Bearer","not-before-policy":1646992007,"scope":""}"
+2022-07-11 08:41:33,654 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@34aeacd1
+2022-07-11 08:41:33,654 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:41:36,314 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dev.adserv.api.andesml.com:443
+2022-07-11 08:41:36,559 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dev.adserv.api.andesml.com:443
+2022-07-11 08:41:37,020 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2022-07-11 08:41:37,027 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2022-07-11 08:41:37,032 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2022-07-11 08:41:37,038 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2022-07-11 08:41:37,042 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /andes-ml/v1/ad/click/?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm=&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName= HTTP/1.1
+2022-07-11 08:41:37,049 DEBUG [main] wire:73 -  >> "GET /andes-ml/v1/ad/click/?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm=&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName= HTTP/1.1[\r][\n]"
+2022-07-11 08:41:37,055 DEBUG [main] wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2022-07-11 08:41:37,063 DEBUG [main] wire:73 -  >> "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODUwOTMsImlhdCI6MTY1NzUwOTA5MywianRpIjoiNDRjOTdhYjgtZDZhOS00ZjJjLTk4MzgtNjJmODZmYWFlZmEwIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.vdU6S0YH-fWvRYIH1XLPzZgqwK79sMEMQoNPleqRqSqibgXc1lNq9xMSwTmr5ffefoM32GL0PrW0_LkI6pPIAOvrPpH77iv07PEY88TylmMRZ4l0lBkR8W9zqqovGHw6wsHQfmXXTcfFvF8ikK6iDW8aFrhjndcxdEDD4JCuL33v9TFORC-JiydyI50EkAYLc64JnCjMedjQ7G8tUic_YsUf4fZwLugcLPEPp6sbRVAGYCUUBhErBPH-4VJ0kzRhjPN6y-KLq1NGd1_-S8m87i6CuvEAMi8wRTz87WuSY3MjjiJPJ7QC5nnHMqFjOBoj0dM_B-7ogOn6pMgEI3kNBw[\r][\n]"
+2022-07-11 08:41:37,070 DEBUG [main] wire:73 -  >> "trace_id: tx_123[\r][\n]"
+2022-07-11 08:41:37,075 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2022-07-11 08:41:37,080 DEBUG [main] wire:73 -  >> "client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf[\r][\n]"
+2022-07-11 08:41:37,086 DEBUG [main] wire:73 -  >> "Host: dev.adserv.api.andesml.com[\r][\n]"
+2022-07-11 08:41:37,091 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2022-07-11 08:41:37,097 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)[\r][\n]"
+2022-07-11 08:41:37,101 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2022-07-11 08:41:37,105 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2022-07-11 08:41:37,110 DEBUG [main] headers:278 - >> GET /andes-ml/v1/ad/click/?adId=f3c606e1226b43088129a7e8dffb0855_20220711022852_R3PGqRK87l&tenantId=629886dcc2311500bd86854a&productId=2836&campaignId=62c5aa6b3daf5950565e0b51&cpc=300&cpm=&encryptedPdpUrl=tgNmdoidj2m1JO77jL7lyJ9bl4u6gRieWtFvzazsNGNBRxTEDez%252FVb9cwWYnq8JxVweUTBpkJxm3c%252FKxQ0uo0QVPrBg3sSykSvGLCXjGBkZD7WGctMIZsJs%253D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName= HTTP/1.1
+2022-07-11 08:41:37,117 DEBUG [main] headers:281 - >> Content-Type: application/json; charset=UTF-8
+2022-07-11 08:41:37,121 DEBUG [main] headers:281 - >> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvMzZlOEFVbnZxenVFb2xhWmQ2RE5HZlFaWnEzRjlNcDBPZ3EwNXZzWU9rIn0.eyJleHAiOjE2NjUyODUwOTMsImlhdCI6MTY1NzUwOTA5MywianRpIjoiNDRjOTdhYjgtZDZhOS00ZjJjLTk4MzgtNjJmODZmYWFlZmEwIiwiaXNzIjoiaHR0cHM6Ly9kZXYuYXV0aC5hbmRlc21sLmNvbS9hdXRoL3JlYWxtcy9hbmRlc21sIiwic3ViIjoiY2UxNTdkYjctMzYyZi00YTIwLWFmYTctNzJkZThhOWU0ZGZhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiOWViMmI4MjctNTA0OS00ZGM4LWE1ODEtMDk4YzY3MjEzZWFmIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiOnsicm9sZXMiOlsiUFVCX0FEX0RJU1BMQVkiLCJ1bWFfcHJvdGVjdGlvbiJdfX0sInNjb3BlIjoiIiwiY2xpZW50SG9zdCI6IjE1Ny40MS4xMzQuMjEzIiwiY2xpZW50SWQiOiI5ZWIyYjgyNy01MDQ5LTRkYzgtYTU4MS0wOThjNjcyMTNlYWYiLCJjbGllbnRBZGRyZXNzIjoiMTU3LjQxLjEzNC4yMTMifQ.vdU6S0YH-fWvRYIH1XLPzZgqwK79sMEMQoNPleqRqSqibgXc1lNq9xMSwTmr5ffefoM32GL0PrW0_LkI6pPIAOvrPpH77iv07PEY88TylmMRZ4l0lBkR8W9zqqovGHw6wsHQfmXXTcfFvF8ikK6iDW8aFrhjndcxdEDD4JCuL33v9TFORC-JiydyI50EkAYLc64JnCjMedjQ7G8tUic_YsUf4fZwLugcLPEPp6sbRVAGYCUUBhErBPH-4VJ0kzRhjPN6y-KLq1NGd1_-S8m87i6CuvEAMi8wRTz87WuSY3MjjiJPJ7QC5nnHMqFjOBoj0dM_B-7ogOn6pMgEI3kNBw
+2022-07-11 08:41:37,125 DEBUG [main] headers:281 - >> trace_id: tx_123
+2022-07-11 08:41:37,134 DEBUG [main] headers:281 - >> Accept: */*
+2022-07-11 08:41:37,138 DEBUG [main] headers:281 - >> client_id: 9eb2b827-5049-4dc8-a581-098c67213eaf
+2022-07-11 08:41:37,144 DEBUG [main] headers:281 - >> Host: dev.adserv.api.andesml.com
+2022-07-11 08:41:37,149 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2022-07-11 08:41:37,153 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.2)
+2022-07-11 08:41:37,160 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2022-07-11 08:41:39,053 DEBUG [main] wire:73 -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+2022-07-11 08:41:39,055 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2022-07-11 08:41:39,056 DEBUG [main] wire:73 -  << "access-control-allow-credentials: true[\r][\n]"
+2022-07-11 08:41:39,058 DEBUG [main] wire:73 -  << "access-control-allow-methods: *[\r][\n]"
+2022-07-11 08:41:39,059 DEBUG [main] wire:73 -  << "access-control-max-age: 3600[\r][\n]"
+2022-07-11 08:41:39,061 DEBUG [main] wire:73 -  << "access-control-allow-headers: *[\r][\n]"
+2022-07-11 08:41:39,064 DEBUG [main] wire:73 -  << "x-content-type-options: nosniff[\r][\n]"
+2022-07-11 08:41:39,065 DEBUG [main] wire:73 -  << "x-xss-protection: 1; mode=block[\r][\n]"
+2022-07-11 08:41:39,066 DEBUG [main] wire:73 -  << "cache-control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2022-07-11 08:41:39,067 DEBUG [main] wire:73 -  << "pragma: no-cache[\r][\n]"
+2022-07-11 08:41:39,068 DEBUG [main] wire:73 -  << "expires: 0[\r][\n]"
+2022-07-11 08:41:39,069 DEBUG [main] wire:73 -  << "x-frame-options: DENY[\r][\n]"
+2022-07-11 08:41:39,070 DEBUG [main] wire:73 -  << "content-type: application/json[\r][\n]"
+2022-07-11 08:41:39,071 DEBUG [main] wire:73 -  << "date: Mon, 11 Jul 2022 03:11:39 GMT[\r][\n]"
+2022-07-11 08:41:39,072 DEBUG [main] wire:73 -  << "x-envoy-upstream-service-time: 103[\r][\n]"
+2022-07-11 08:41:39,074 DEBUG [main] wire:73 -  << "server: istio-envoy[\r][\n]"
+2022-07-11 08:41:39,074 DEBUG [main] wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2022-07-11 08:41:39,075 DEBUG [main] wire:73 -  << "Via: 1.1 google[\r][\n]"
+2022-07-11 08:41:39,076 DEBUG [main] wire:73 -  << "Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000[\r][\n]"
+2022-07-11 08:41:39,077 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:41:39,079 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 500 Internal Server Error
+2022-07-11 08:41:39,081 DEBUG [main] headers:262 - << HTTP/1.1 500 Internal Server Error
+2022-07-11 08:41:39,083 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2022-07-11 08:41:39,085 DEBUG [main] headers:265 - << access-control-allow-credentials: true
+2022-07-11 08:41:39,086 DEBUG [main] headers:265 - << access-control-allow-methods: *
+2022-07-11 08:41:39,087 DEBUG [main] headers:265 - << access-control-max-age: 3600
+2022-07-11 08:41:39,088 DEBUG [main] headers:265 - << access-control-allow-headers: *
+2022-07-11 08:41:39,089 DEBUG [main] headers:265 - << x-content-type-options: nosniff
+2022-07-11 08:41:39,090 DEBUG [main] headers:265 - << x-xss-protection: 1; mode=block
+2022-07-11 08:41:39,091 DEBUG [main] headers:265 - << cache-control: no-cache, no-store, max-age=0, must-revalidate
+2022-07-11 08:41:39,092 DEBUG [main] headers:265 - << pragma: no-cache
+2022-07-11 08:41:39,094 DEBUG [main] headers:265 - << expires: 0
+2022-07-11 08:41:39,095 DEBUG [main] headers:265 - << x-frame-options: DENY
+2022-07-11 08:41:39,097 DEBUG [main] headers:265 - << content-type: application/json
+2022-07-11 08:41:39,097 DEBUG [main] headers:265 - << date: Mon, 11 Jul 2022 03:11:39 GMT
+2022-07-11 08:41:39,098 DEBUG [main] headers:265 - << x-envoy-upstream-service-time: 103
+2022-07-11 08:41:39,099 DEBUG [main] headers:265 - << server: istio-envoy
+2022-07-11 08:41:39,099 DEBUG [main] headers:265 - << transfer-encoding: chunked
+2022-07-11 08:41:39,100 DEBUG [main] headers:265 - << Via: 1.1 google
+2022-07-11 08:41:39,101 DEBUG [main] headers:265 - << Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2022-07-11 08:41:39,105 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2022-07-11 08:41:39,107 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
+2022-07-11 08:41:39,108 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2022-07-11 08:41:39,112 DEBUG [main] wire:73 -  << "7a[\r][\n]"
+2022-07-11 08:41:39,113 DEBUG [main] wire:87 -  << "{"timestamp":"2022-07-11T03:11:39.145+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click/"}"
+2022-07-11 08:41:39,114 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:41:39,115 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2022-07-11 08:41:39,115 DEBUG [main] wire:73 -  << "[\r][\n]"
+2022-07-11 08:41:39,116 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@52c9d3d0
+2022-07-11 08:41:39,117 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2022-07-11 08:41:39,737 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:41:39,740 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:41:39,742 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:41:39,744 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:41:39,745 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2022-07-11 08:41:40,128 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+2022-07-11 08:41:40,130 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+2022-07-11 08:41:40,130 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2022-07-11 08:41:40,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2022-07-11 08:41:40,131 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/tussar/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

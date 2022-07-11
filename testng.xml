@@ -16,10 +16,18 @@
 		<class name="net.andesml.CampaignManagement.RemoveProductsFromCampaign" />
 		<class name="net.andesml.CampaignManagement.UpdateCampaign" />
 		<class name="net.andesml.CampaignManagement.UpdateProducts" />
-		<class name="net.andesml.CampaignManagement.SetStatus" />	-->
+		<class name="net.andesml.CampaignManagement.SetStatus" />	
+		
 		
 		<class name="net.andesml.AdServingEngine.ImpressionAPI" />
-
+		<class name="net.andesml.AdServingEngine.ImpressionAPI_SLP" />
+		<class name="net.andesml.AdServingEngine.OrderEventAPI" />
+		
+		
+		-->
+		
+		
+		<class name="net.andesml.AdServingEngine.ClickLogAPI" />
 		
 		</classes>
 	</test> 
