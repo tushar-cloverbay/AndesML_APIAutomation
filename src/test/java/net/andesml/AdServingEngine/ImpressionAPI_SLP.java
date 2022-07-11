@@ -103,7 +103,7 @@ public class ImpressionAPI_SLP extends Base {
 		response.then().assertThat().statusCode(equalTo(400));
 
 	}
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",enabled = false)
 	public void impressionAPI_SLP_without_client_id(String version) throws Exception {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "\"Verify status code and error message after calling impressionAPI_SLP without client_id header.");
 		String URI = Constants.ADSE_domain+"/andes-ml/v1/ad/impression/search";
