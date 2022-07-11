@@ -1,0 +1,12 @@
+{
+    "tenant_id":"629886dcc2311500bd86854a",
+    "search_word": "Dharco1",
+    "total_results":20,
+    "andes_user_id":"ANDES_123",
+    "user":[
+        {
+            "user_id":"u_123",
+            "user_id_type":"idfa"
+        }
+    ]
+}

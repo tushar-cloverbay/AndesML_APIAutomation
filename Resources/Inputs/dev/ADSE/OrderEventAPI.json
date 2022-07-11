@@ -1,0 +1,12 @@
+{
+    "tenant_id":"629886dcc2311500bd86854a",
+    "order_id": "test_order_O123458",
+    "andes_user_id":"ANDES_123",
+    "alternate_user_id":
+    [
+        {
+            "user_id":"u_123",
+            "user_id_type":"idfa"
+        }
+    ]
+}
