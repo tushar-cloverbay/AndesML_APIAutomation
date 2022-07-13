@@ -149,8 +149,8 @@ public class ImpressionAPI_SLP extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("data", nullValue());
+		response.then().assertThat().statusCode(equalTo(200));
+		response .then().body("data", hasSize(0));
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void impressionAPI_SLP_without_andes_user_id(String version) throws Exception {
@@ -246,7 +246,7 @@ public class ImpressionAPI_SLP extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("data", nullValue());
+		response.then().assertThat().statusCode(equalTo(200));
+		response .then().body("data", hasSize(0));
 	}
 }

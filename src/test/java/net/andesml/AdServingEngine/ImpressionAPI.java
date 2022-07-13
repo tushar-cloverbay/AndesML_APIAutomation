@@ -6,6 +6,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import static org.hamcrest.Matchers.*;
 
+import org.hamcrest.collection.IsEmptyCollection;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -40,6 +42,7 @@ public class ImpressionAPI extends Base {
 		System.out.println(response.getStatusCode());
 		response.then().assertThat().statusCode(equalTo(200));
 		adId = JsonUtils.getKeyValue(response, "data[0].adId");
+		refUrl = JsonUtils.getKeyValue(response, "data[0].refUrl");
 		System.out.println("****************Ad_ID*************"+adId);
 
 	}
@@ -151,9 +154,10 @@ public class ImpressionAPI extends Base {
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("data", nullValue());
+		response.then().assertThat().statusCode(equalTo(200));
+		response .then().body("data", hasSize(0));
 	}
+	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void ImpressionsAPI_invalid_category_name(String version) throws Exception {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling impression api without category_name in body.");
@@ -170,15 +174,16 @@ public class ImpressionAPI extends Base {
 				.header("trace_id", Constants.trace_id_client_cred)
 				.header("tenant_id", Constants.tenant_id);
 		Response response = request.post(URI);
+		response .then().body("data", hasSize(0));
 		responseBase = response;
 		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 200");
 		statusCode = ""+response.getStatusCode();
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("data", nullValue());
+		response.then().assertThat().statusCode(equalTo(200));
 	}
+	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void ImpressionsAPI_without_andes_user_id(String version) throws Exception {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Verify status code and error message after calling impression api without andes_user_id in body.");
@@ -251,4 +256,5 @@ public class ImpressionAPI extends Base {
 		System.out.println(response.getStatusCode());
 		response.then().assertThat().statusCode(equalTo(400));
 	}
+	
 }

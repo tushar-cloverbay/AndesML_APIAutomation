@@ -53,7 +53,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2022-07-11 08:41:40</span>
+					<span class='suite-started-time'>2022-07-13 09:58:52</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +83,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 11s+729ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 2m 9s+823ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 11s+729ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 2m 9s+823ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2022-07-11 08:41:28</span> 
+							<span class='panel-lead suite-started-time'>2022-07-13 09:56:43</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2022-07-11 08:41:40</span> 
+							<span class='panel-lead suite-ended-time'>2022-07-13 09:58:52</span> 
 						</div> 
 					</div>
 				</div>
@@ -241,17 +241,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active fail ' extentid='65af0c12-e503-4fee-b734-d91cc4981d61'>
+										<li class='collection-item test displayed active pass ' extentid='59c9f580-3ef7-425f-ab47-ed08c45faa7b'>
 											<div class='test-head'>
-												<span class='test-name'>ClickLogAPI_VerifyStatusCode </span>
-												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='test-name'>ImpressionsAPI_VerifyStatusCode </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-11 08:41:28</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-11 08:41:39</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+673ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:56:43</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:56:50</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+337ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -268,38 +268,2079 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>08:41:28</td>
+																	<td class='timestamp'>09:56:43</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ImpressionsAPI api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:43</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:50</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:50</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:50</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[{"adId":"3f6f142b611f444fba8ea16b50326924_20220713042649_ETqDS","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":null,"categoryName":"mtb","impressionTime":"2022-07-13T04:26:49.781402956Z","productId":"5153","productName":"Bicicleta Siskiu D6 29 Polygon Naranjo XL","productTitle":"Bicicleta Siskiu D6 29 Polygon","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/194971/bicicleta-polygon-siskiu-d6-org_13579_sq.jpg?v=637883062875070000","mrp":1399000,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=3f6f142b611f444fba8ea16b50326924_20220713042649_ETqDS&tenantId=629886dcc2311500bd86854a&productId=5153&campaignId=62c5a7823daf5950565e0b4e&cpc=300&cpm&encryptedPdpUrl=41Sdk5dVNctF26gJNsLiODe37cm2dgJrkFbpPbyvocqpY3olUBKBrKhZuZkrsPEZwsuckHMS3NPqssFkfA3mwr19GZl%2FbiKG0vl58OAO9nyGlxfyrFGgchOKn%2FjCrKib1NUSCGnzoxo%3D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw&categoryName=mtb","productBrand":"POLYGON"},{"adId":"2f3edf9df9df464a926660307f66d79c_20220713042649_UYLL7wZmm","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":null,"categoryName":"mtb","impressionTime":"2022-07-13T04:26:49.781198170Z","productId":"317","productName":"Bicicleta SISKIU T7 2021 29 Polygon 29 XL","productTitle":"Bicicleta SISKIU T7 2021 29 Polygon","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/166019/Foto53.jpg?v=637909038324570000","mrp":1999000,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=2f3edf9df9df464a926660307f66d79c_20220713042649_UYLL7wZmm&tenantId=629886dcc2311500bd86854a&productId=317&campaignId=62c5a8623daf5950565e0b4f&cpc=300&cpm&encryptedPdpUrl=78mrNvaFM97nRAn7Cqg%2B8e2z5xirxxDSIwpPceUfNl9xhyRYhrXXYOi7c%2BvJFyX%2B%2BngehkotfGgAMvqwbCjidOPS3%2BCao3n2Dvq0dIc%2FxVDIMpFrK74IF19tSXYrd55We42PibgO%2Fq%2BjwNxS%2Bw%3D%3D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw&categoryName=mtb","productBrand":"POLYGON"}]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:50</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_VerifyStatusCode</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='352f9441-be1d-429b-b665-c33c89c049db'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_VerifyResponseBody </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:56:50</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:56:54</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+17ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:50</td>
+																	<td class='step-details'>Test Description : Verify Response parameters after calling create ImpressionsAPI api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:50</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:54</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:54</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:54</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[{"adId":"fe8f743a654148afbaf4b84aa0524e0b_20220713042653_t4VyZ","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":null,"categoryName":"mtb","impressionTime":"2022-07-13T04:26:53.899871653Z","productId":"5153","productName":"Bicicleta Siskiu D6 29 Polygon Naranjo XL","productTitle":"Bicicleta Siskiu D6 29 Polygon","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/194971/bicicleta-polygon-siskiu-d6-org_13579_sq.jpg?v=637883062875070000","mrp":1399000,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=fe8f743a654148afbaf4b84aa0524e0b_20220713042653_t4VyZ&tenantId=629886dcc2311500bd86854a&productId=5153&campaignId=62c5a7823daf5950565e0b4e&cpc=300&cpm&encryptedPdpUrl=tC2OZUb91A3xmFwl0Bh%2FD4f3n8Ui6pfhIWtFqbol0daoXXDNpHQzabdFDjF5Usgb6cBBPQsM5gjBAfg3Y5az%2Fw3BWgFIZYbuNd0N9stZJvw2r40bJ%2FQJwJKT41m3hKMdC95RSMjOry0%3D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw&categoryName=mtb","productBrand":"POLYGON"},{"adId":"9734c2e125b641b0b1889f507a544f46_20220713042653_lBCOq7SSI","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":null,"categoryName":"mtb","impressionTime":"2022-07-13T04:26:53.900000649Z","productId":"314","productName":"Bicicleta SISKIU D7 2021 27.5 Polygon 27.5 S","productTitle":"Bicicleta SISKIU D7 2021 27.5 Polygon","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/165987/Foto21.jpg?v=637909037772970000","mrp":1399000,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=9734c2e125b641b0b1889f507a544f46_20220713042653_lBCOq7SSI&tenantId=629886dcc2311500bd86854a&productId=314&campaignId=62c5a8623daf5950565e0b4f&cpc=300&cpm&encryptedPdpUrl=kpDc2ImoI1By%2F%2BoIYH8qJrQlA6K6Eo1XQ5oMsgZKqrkgvbTnq4tprVDskno3EF%2B4OuusoKIF05tHPrgk1nbS4HOYlBFG0cRUHtL8QLccaDaOhdN0gwv5kIH3vj7AEuvGxaJZjucnsB0FAGNGCcRY&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw&categoryName=mtb","productBrand":"POLYGON"}]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:54</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_VerifyResponseBody</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='ff6fd424-f9ff-4c70-95cf-c3f27aa0a8d5'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_invalid_category_name </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:56:54</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:00</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+589ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:54</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impression api without category_name in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:56:54</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:00</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:00</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:00</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:00</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_invalid_category_name</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='cfa113db-6ac9-4bcb-80dc-d6adbadea49f'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_without_andes_user_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:00</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:04</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+943ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:00</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impression api without andes_user_id in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:00</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:04</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:04</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:04</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:03.492+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:04</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_without_andes_user_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='bbe8f573-fdde-491a-a45c-901bd4f8d795'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_without_category_name </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:04</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:08</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+758ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:04</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impression api without category_name in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:04</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:08</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:08</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:08</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:08</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_without_category_name</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='7b7ddc01-1be7-4f0b-971f-849e20fd9507'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_without_tenant_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:08</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:11</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+402ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:08</td>
+																	<td class='step-details'>Test Description : "Verify status code and error message after calling impression api without tenant_id header.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:08</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:11</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:11</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:11</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:10.850+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:11</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_without_tenant_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='36bbd118-f2b0-4564-8ee9-e552962a9610'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_without_total_results </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:11</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:14</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+544ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:11</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impression api without total_results in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:11</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:14</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:14</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:14</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:14.693+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:14</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_without_total_results</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='b45f4071-ad89-480c-bb06-33dc518849d7'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_without_user </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:14</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:17</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+505ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:14</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impression api without user in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:14</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:17</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:17</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:17</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:16.970+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:17</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_without_user</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='39cc5aa6-e77e-4b3d-a1a9-984de3e17f56'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_SLP_VerifyResponseBody </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:17</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:23</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+738ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:17</td>
+																	<td class='step-details'>Test Description : Verify Response parameters after calling ImpressionsAPI_SLP api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:17</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:22</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:23</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:23</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[{"adId":"fa9411edbfa9418f999019590458c7a3_20220713042722_rwnENoW4z","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":"Dharco","categoryName":null,"impressionTime":"2022-07-13T04:27:22.291236292Z","productId":"63","productName":"Polera Hombre Manga 3/4 Blue Steel Dharco Azul - Talla XL","productTitle":"Polera Hombre Manga 3/4 Blue Steel Dharco","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/163520/Performancepro693633.jpg?v=637908954102800000","mrp":289990,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=fa9411edbfa9418f999019590458c7a3_20220713042722_rwnENoW4z&tenantId=629886dcc2311500bd86854a&productId=63&campaignId=62c5aaf23daf5950565e0b52&cpc=300&cpm&encryptedPdpUrl=68mww4AH7O8uHMhYXFBk82EKKqbP%2FnGZTbEEq0TxoWuP7jYevyIISvuB8wuF4Ndv%2FIsLOWb7m1RjBqAl%2BRJ%2FeV0fNhPgPyJRrFAs7ueNbW1vHpRthooZixdoMsKftw%3D%3D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName","productBrand":"DHARCO"},{"adId":"2e703e28b7184d53851fe5a87ac3b299_20220713042722_SZwbayNdh4","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":"Dharco","categoryName":null,"impressionTime":"2022-07-13T04:27:22.291572017Z","productId":"4308","productName":"Polera Hombre Manga Corta Tie Dye Dharco Azul XXL","productTitle":"Polera Hombre Manga Corta Tie Dye Dharco","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/192306/tie-dye.jpg?v=637910414717730000","mrp":0,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=2e703e28b7184d53851fe5a87ac3b299_20220713042722_SZwbayNdh4&tenantId=629886dcc2311500bd86854a&productId=4308&campaignId=62c5aaf23daf5950565e0b52&cpc=300&cpm&encryptedPdpUrl=otD9AWeCGXUGLMfnKE%2B5Re75Ae6zlcL5yRK6N4RhT5%2B0nl%2FmHkVRkxQZ38S%2Big1sZtgkS34Rd9NISwGX5zt7S%2BR7XKAukn7SaHFm2FWTWlWSuTHReCosUCY1NonG&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName","productBrand":"DHARCO"}]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:23</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_SLP_VerifyResponseBody</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='91649581-aaac-4d32-a983-dc6e02ec3ab7'>
+											<div class='test-head'>
+												<span class='test-name'>ImpressionsAPI_SLP_without_tenant_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:23</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:25</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+92ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:23</td>
+																	<td class='step-details'>Test Description : "Verify status code and error message after calling ImpressionsAPI_SLP without tenant_id header.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:23</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:25</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:25</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:25</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:24.782+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression/search"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:25</td>
+																	<td class='step-details'>Test Case PASSED IS : ImpressionsAPI_SLP_without_tenant_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='df189fe5-d647-4472-8bb7-352999efa01f'>
+											<div class='test-head'>
+												<span class='test-name'>impressionAPI_SLP_VerifyStatusCode </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:25</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:27</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+501ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:25</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ImpressionsAPI_SLP api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:25</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:27</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:27</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:27</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[{"adId":"aab944512a164c5e8f8aa9a4ca26198e_20220713042727_TMUhkStQ","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":"Dharco","categoryName":null,"impressionTime":"2022-07-13T04:27:27.157171427Z","productId":"2","productName":"Polera Hombre Manga Corta Bloodshot Dharco Rojo-Talla XL","productTitle":"Polera Hombre Manga Corta Bloodshot Dharco","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/162868/foto44.jpg?v=637908943748430000","mrp":239990,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=aab944512a164c5e8f8aa9a4ca26198e_20220713042727_TMUhkStQ&tenantId=629886dcc2311500bd86854a&productId=2&campaignId=62c5aaf23daf5950565e0b52&cpc=300&cpm&encryptedPdpUrl=Y%2BaQ7JoLcDKLlEymCnWZRLEBZDpXDAllZ27qn7SBPG3i7RwS5tqfbuxh7JKNqz1VW9AcFEMux116eNdF6bjzmepFawxbwyBctCafVAB%2Fc%2B5uByFsZ8vh9zYz5hvXtno%3D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName","productBrand":"DHARCO"},{"adId":"e5374d195c28416e936e3e6087615c5c_20220713042727_fXWPhXiz1h","tenantId":"629886dcc2311500bd86854a","effectiveCpc":300,"effectiveCpm":null,"cpcCurrency":"CLP","requestType":"CATEGORY_LISTING_PAGE","searchKeyword":"Dharco","categoryName":null,"impressionTime":"2022-07-13T04:27:27.157335703Z","productId":"63","productName":"Polera Hombre Manga 3/4 Blue Steel Dharco Azul - Talla XL","productTitle":"Polera Hombre Manga 3/4 Blue Steel Dharco","imageUrl":"https://montenbaikcl.vteximg.com.br/arquivos/ids/163520/Performancepro693633.jpg?v=637908954102800000","mrp":289990,"priceCurrency":"$","refUrl":"https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click?adId=e5374d195c28416e936e3e6087615c5c_20220713042727_fXWPhXiz1h&tenantId=629886dcc2311500bd86854a&productId=63&campaignId=62c5aaf23daf5950565e0b52&cpc=300&cpm&encryptedPdpUrl=qOXot0pnlwU%2B2tZws1qYDUWY0k4FCESWaSQbzweMr%2BIOVrvlbJpSTgsnwf3p4LvMfP%2BBPpKCFaFQ091DY8CpoBQK%2BMUUvcCCkKRBy84kCj6s4UWHtemnZe1PW1QGJA%3D%3D&isUrlEncrypted=true&requestType=CATEGORY_LISTING_PAGE&searchKw=Dharco&categoryName","productBrand":"DHARCO"}]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:27</td>
+																	<td class='step-details'>Test Case PASSED IS : impressionAPI_SLP_VerifyStatusCode</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='7f3bc659-1603-4674-8955-c37b817a5174'>
+											<div class='test-head'>
+												<span class='test-name'>impressionAPI_SLP_invalid_search_word </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:27</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:32</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+934ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:27</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impressionAPI_SLP without search_word in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:27</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:32</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:32</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:32</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:32</td>
+																	<td class='step-details'>Test Case PASSED IS : impressionAPI_SLP_invalid_search_word</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='b37dc196-aa03-4a80-8116-1e4b49e7ee82'>
+											<div class='test-head'>
+												<span class='test-name'>impressionAPI_SLP_without_andes_user_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:32</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:36</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+44ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:32</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impressionAPI_SLP without andes_user_id in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:32</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:36</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:36</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:36</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:36.237+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression/search"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:36</td>
+																	<td class='step-details'>Test Case PASSED IS : impressionAPI_SLP_without_andes_user_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='94ccf144-c70c-4806-9d4e-35e305ef3805'>
+											<div class='test-head'>
+												<span class='test-name'>impressionAPI_SLP_without_search_word </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:36</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:38</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+231ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:36</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impressionAPI_SLP without search_word in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:36</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:38</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:38</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:38</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":[]}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:38</td>
+																	<td class='step-details'>Test Case PASSED IS : impressionAPI_SLP_without_search_word</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='9589081b-5f7c-4d3c-a3b5-c4749483ad76'>
+											<div class='test-head'>
+												<span class='test-name'>impressionAPI_SLP_without_total_results </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:38</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:43</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+965ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:38</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impressionAPI_SLP without total_results in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:38</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:43</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:43</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:43</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:43.619+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression/search"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:43</td>
+																	<td class='step-details'>Test Case PASSED IS : impressionAPI_SLP_without_total_results</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='2f51f024-7f3e-4c5f-9368-b95ed1f3345b'>
+											<div class='test-head'>
+												<span class='test-name'>impressionAPI_SLP_without_user </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:43</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:48</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+887ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:43</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling impressionAPI_SLP without user in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:43</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/impression/search</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:48</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:48</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:48</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:27:48.370+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/impression/search"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:48</td>
+																	<td class='step-details'>Test Case PASSED IS : impressionAPI_SLP_without_user</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='9040b4f3-f0eb-4d7b-81e4-700e7cff5330'>
+											<div class='test-head'>
+												<span class='test-name'>OrderEventAPI_VerifyResponseBody </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:48</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:52</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+565ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:48</td>
+																	<td class='step-details'>Test Description : Verify Response parameters after calling create OrderEventAPI api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:48</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/order-event</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:52</td>
+																	<td class='step-details'>ExpectedStatus Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:52</td>
+																	<td class='step-details'>Actual Status Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:52</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":"test_order_O123458"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:52</td>
+																	<td class='step-details'>Test Case PASSED IS : OrderEventAPI_VerifyResponseBody</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='e3f59bb9-2800-49cf-8ea1-6885e07d5d23'>
+											<div class='test-head'>
+												<span class='test-name'>OrderEventAPI_VerifyStatusCode </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:52</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:56</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+773ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:52</td>
+																	<td class='step-details'>Test Description : Verify status code after calling OrderEventAPI api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:52</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/order-event</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:56</td>
+																	<td class='step-details'>ExpectedStatus Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:56</td>
+																	<td class='step-details'>Actual Status Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:56</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":"test_order_O123458"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:56</td>
+																	<td class='step-details'>Test Case PASSED IS : OrderEventAPI_VerifyStatusCode</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='2257938b-5a1f-44ac-8c8e-88dbc88cd7a0'>
+											<div class='test-head'>
+												<span class='test-name'>OrderEventAPI_without_client_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:56</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:57:58</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+998ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:56</td>
+																	<td class='step-details'>Test Description : "Verify status code and error message after calling OrderEventAPI without client_id header.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:56</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/order-event</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:58</td>
+																	<td class='step-details'>ExpectedStatus Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:58</td>
+																	<td class='step-details'>Actual Status Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:58</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":"test_order_O123458"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:58</td>
+																	<td class='step-details'>Test Case PASSED IS : OrderEventAPI_without_client_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='c2ba441b-352a-47ec-9039-f65c7717417c'>
+											<div class='test-head'>
+												<span class='test-name'>OrderEventAPI_without_order_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:57:58</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:00</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+178ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:58</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling OrderEventAPI without category_name in body.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:57:58</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/order-event</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:00</td>
+																	<td class='step-details'>ExpectedStatus Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:00</td>
+																	<td class='step-details'>Actual Status Code : 201</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:00</td>
+																	<td class='step-details'>Response : {"success":true,"message":"Success","data":null}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:00</td>
+																	<td class='step-details'>Test Case PASSED IS : OrderEventAPI_without_order_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='162622ac-ae0f-4eab-b585-92db468a1bf2'>
+											<div class='test-head'>
+												<span class='test-name'>OrderEventAPI_without_tenant_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:00</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:04</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+574ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:00</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling OrderEventAPI without tenant_id header.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:00</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/order-event</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:04</td>
+																	<td class='step-details'>ExpectedStatus Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:04</td>
+																	<td class='step-details'>Actual Status Code : 400</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:04</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:28:04.721+00:00","status":400,"error":"Bad Request","path":"/andes-ml/v1/ad/order-event"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:04</td>
+																	<td class='step-details'>Test Case PASSED IS : OrderEventAPI_without_tenant_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='c2a0083a-c88e-4e6b-8098-048d6c0f3da7'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_VerifyResponseBody </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:04</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:08</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+451ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:04</td>
+																	<td class='step-details'>Test Description : Verify response body parameters after calling ClickLogAPI api.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:04</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:08</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:08</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:08</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:08</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_VerifyResponseBody</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='04cc4061-47f4-480b-ac67-7d68fc3e67c8'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_VerifyStatusCode </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:08</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:12</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+584ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:08</td>
 																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api.</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>08:41:28</td>
-																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click/</td>
+																	<td class='timestamp'>09:58:08</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>08:41:39</td>
+																	<td class='timestamp'>09:58:12</td>
 																	<td class='step-details'>ExpectedStatus Code : 200</td>
 																</tr>
 																<tr>
-																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>08:41:39</td>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:12</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:12</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:12</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_VerifyStatusCode</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='d848be65-71dc-4ee9-bfca-e7235f2af741'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_VerifyWithout_client_id </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:12</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:17</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+719ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:12</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling ClickLogAPI api without client_id header</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:12</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:17</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:17</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:17</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:17</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_VerifyWithout_client_id</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='c7027ea9-67fa-41c6-9a25-341327c69a54'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_Without_encryptedPdpUrl </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:17</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:21</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+893ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:17</td>
+																	<td class='step-details'>Test Description : Verify status code and error message after calling ClickLogAPI api without encryptedPdpUrl parameter.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:17</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:21</td>
+																	<td class='step-details'>ExpectedStatus Code : 500</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:21</td>
 																	<td class='step-details'>Actual Status Code : 500</td>
 																</tr>
 																<tr>
-																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>08:41:39</td>
-																	<td class='step-details'>Reasons for failure : {"timestamp":"2022-07-11T03:11:39.145+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click/"}</td>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:21</td>
+																	<td class='step-details'>Response : {"timestamp":"2022-07-13T04:28:21.080+00:00","status":500,"error":"Internal Server Error","path":"/andes-ml/v1/ad/click"}</td>
 																</tr>
 																<tr>
-																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>08:41:39</td>
-																	<td class='step-details'>TEST CASE FAILED IS ClickLogAPI_VerifyStatusCode</td>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:21</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_Without_encryptedPdpUrl</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='3b7b2ac5-d0fb-4ca2-ae1c-7329d7fb8381'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_onlyWith_encryptedPdpUrl </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:21</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:25</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+685ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:21</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without all parameters except encryptedPdpUrl.</td>
 																</tr>
 																<tr>
-																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>08:41:39</td>
-																	<td class='step-details'>TEST CASE FAILED IS java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V</td>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:21</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:25</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:25</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:25</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Invalid Request.Unable to fetch URL or Unclear encryption of URL.","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:25</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_onlyWith_encryptedPdpUrl</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='27c0949a-8f2a-4cdb-ac91-be867303c4aa'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_adId </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:25</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:30</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+765ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:25</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without adId.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:25</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:30</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:30</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:30</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:30</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_adId</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='b7fa8725-d515-458b-b6c0-5d836947f914'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_campaignId </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:30</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:32</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+73ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:30</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without campaignId.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:30</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:32</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:32</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:32</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:32</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_campaignId</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='04dd0998-b56e-4885-8a37-205def774a62'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_categoryName </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:32</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:36</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+855ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:32</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without categoryName.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:32</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:36</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:36</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:36</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:36</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_categoryName</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='1e09227a-f66a-46ee-814e-2a8d572d86cd'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_cpc </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:36</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:39</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+398ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:36</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without cpc.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:36</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:39</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:39</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:39</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:39</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_cpc</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='0298bb06-ee4f-41aa-aae5-5f7daea213c5'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_cpm </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:39</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:44</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+922ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:39</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without cpm.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:39</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:44</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:44</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:44</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:44</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_cpm</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='e3b900e8-eaa7-48d3-9824-29b08b88dd29'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_productId </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:44</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:46</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+142ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:44</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without productId.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:44</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:46</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:46</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:46</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:46</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_productId</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='b021692f-94c8-4745-933c-f5f3e44200d9'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_searchKw </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:46</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:50</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+800ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:46</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without searchKw.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:46</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:50</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:50</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:50</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:50</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_searchKw</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='704c2b1a-1d64-4ec2-9838-5c25ed938b9b'>
+											<div class='test-head'>
+												<span class='test-name'>ClickLogAPI_without_tenantId </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-07-13 09:58:50</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-07-13 09:58:52</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+217ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:50</td>
+																	<td class='step-details'>Test Description : Verify status code after calling ClickLogAPI api without tenantId.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:50</td>
+																	<td class='step-details'>API URI : https://dev.adserv.api.andesml.com/andes-ml/v1/ad/click</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:52</td>
+																	<td class='step-details'>ExpectedStatus Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:52</td>
+																	<td class='step-details'>Actual Status Code : 200</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:52</td>
+																	<td class='step-details'>Response : {"isIssue":true,"message":"Partial Success -> The parameter 'userId' has value = NULL !!!","url":"https://montenbaik.com/jockey-trucker-thrills-chills-dharco/p"}</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>09:58:52</td>
+																	<td class='step-details'>Test Case PASSED IS : ClickLogAPI_without_tenantId</td>
 																</tr>
 														</tbody>
 													</table>

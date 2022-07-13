@@ -178,6 +178,7 @@ public class TestUtils extends Base {
 		System.out.println("*******************************************************************************");
 		System.out.println(response.asPrettyString());
 		String token = JsonUtils.getKeyValue(response, "access_token");
+		System.out.println(token);
 		return token;
 	}
 }

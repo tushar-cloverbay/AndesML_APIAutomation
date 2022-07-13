@@ -58,12 +58,12 @@ public class OrderEventAPI extends Base {
 				.header("tenant_id", Constants.tenant_id);
 		Response response = request.post(URI);
 		responseBase = response;
-		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 200");
+		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 201");
 		statusCode = ""+response.getStatusCode();
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
+		response.then().assertThat().statusCode(equalTo(201))
 		.body("success", is(true))
 		.body("message", is("Success"))
 		.body("data", notNullValue());
@@ -111,12 +111,12 @@ public class OrderEventAPI extends Base {
 				.header("tenant_id", Constants.tenant_id);
 		Response response = request.post(URI);
 		responseBase = response;
-		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 500");
+		extentTest.log(LogStatus.PASS, "ExpectedStatus Code : 201");
 		statusCode = ""+response.getStatusCode();
 		responseBody =response.getBody().asString();
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(500));
+		response.then().assertThat().statusCode(equalTo(201));
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void OrderEventAPI_without_order_id(String version) throws Exception {
