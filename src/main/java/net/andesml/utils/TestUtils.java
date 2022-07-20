@@ -163,8 +163,8 @@ public class TestUtils extends Base {
 	public static String getAccessToken(String userName, String password) throws Exception {
 		Response response = RestAssured.given().auth().preemptive().basic(Constants.client_id, Constants.client_secret)
 				.formParam("grant_type", "password")
-				.formParam("username", Constants.user)
-				.formParam("password", Constants.password)
+				.formParam("username", userName)
+				.formParam("password", password)
 				.when().post(Constants.access_token_url);
 		System.out.println("*******************************************************************************");
 		System.out.println(response.asPrettyString());

@@ -1,0 +1,21 @@
+{
+    "is_business_account": true,
+    "profile_type":"PUBLISHER",
+    "profile_sub_type":"MARKETPLACE",
+    "tos_audit": 
+    {
+      "document_id": "id",
+      "document_name": "mydoc",
+      "status": "ACCEPTED",
+      "timestamp": "datetime"
+    },
+       "vanity_name": "vn_myvanity",
+        "org_info": {
+            "name": "mytenant1.org",
+            "business_name":"buss",
+            "type":"RETAIL",
+            "country_iso_code":"ISO1",
+            "website":"www.mytenat1.org"
+        }
+
+}

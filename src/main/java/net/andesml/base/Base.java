@@ -37,6 +37,8 @@ public class Base {
 	public static String campaignId;
 	public static String adId;
 	public static String refUrl;
+	public static String profile_id;
+	public static String vanity_name_base;
 	
 	public Base() {
 		Constants.loadEnv();

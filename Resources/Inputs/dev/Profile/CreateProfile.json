@@ -1,0 +1,15 @@
+{
+    "is_business_account": true,
+    "profile_type":"PUBLISHER",
+    "profile_sub_type":"MARKETPLACE",
+    "vanity_name": "mytest1",
+        "org_info": {
+            "name": "mytenant12.org",
+            "business_name":"buss12",
+            "type":"RETAIL",
+            "country_iso_code":"ISO1",
+            "website":"www.mytenat12.org"
+        },
+    "created_by":"admin@crossmountain.com"
+
+}

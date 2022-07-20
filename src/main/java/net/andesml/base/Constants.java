@@ -8,14 +8,20 @@ public class Constants extends Base{
 	
 	public static String campaign_manager_domain = "https://dev.campaign.api.andesml.com";
 	public static String ADSE_domain = "https://dev.adserv.api.andesml.com";
+	public static String profile_domain = "https://dev.profiles.api.andesml.com";
+	
 	public static String tenant_id = "629886dcc2311500bd86854a";
 	public static String advertiser_id = "629885bdc2311500bd868549";
 	public static String seller_id = "629885bdc2311500bd868549";
 	public static String tenant_name = "MontenBaik";
 	public static String advertiser_name = "CrossMountain";
 	public static String seller_name = "CrossMountain";
+	
 	public static String user = "admin@crossmountain.com";
 	public static String password = "Qazwsx@1";
+	public static String profileUser = "andesadmin@dev";
+	public static String profilePassword = "Test@123";
+	
 	public static String client_id = "next-web-app";
 	public static String client_secret = "Avahk6aRa7sS9At9eFzNMCcb22ZULHj6";
 	public static String trace_id = "123-abc-456";
@@ -44,6 +50,9 @@ public class Constants extends Base{
 		}
 		if(campaignName==null) {
 			campaignName = "Test_22";
+		}
+		if (profile_id==null) {
+			profile_id = "62d757d38bd5a84d8562e91f";
 		}
 	}
 }
